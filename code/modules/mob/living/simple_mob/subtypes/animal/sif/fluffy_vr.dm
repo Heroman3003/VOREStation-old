@@ -1,13 +1,19 @@
-/mob/living/simple_mob/fluffy
+/mob/living/simple_mob/animal/sif/fluffy
 	name = "Fluffy"
 	desc = "It's a pink Diyaab! It seems to be very tame and quiet."
-	icon = 'icons/mob/animal_vr.dmi'
+	tt_desc = "S Choeros hirtus"
+
 	icon_state = "fluffy"
 	icon_living = "fluffy"
 	icon_dead = "fluffy_dead"
 	icon_rest = "fluffy_sleep"
+	icon = 'icons/mob/animal_vr.dmi'
 
-	turns_per_move = 10
+	maxHealth = 20 //don't want Fluff to die on a missclick
+	health = 20
+
+	movement_cooldown = 5
+
 	see_in_dark = 5
 	mob_size = MOB_TINY
 
@@ -19,21 +25,12 @@
 	minbodytemp = 223		//Below -50 Degrees Celcius
 	maxbodytemp = 323		//Above 50 Degrees Celcius
 
-	speak_chance = 1
-	speak = list("Squee","Arf arf","Awoo","Squeak")
-	speak_emote = list("squeaks", "barks")
-	emote_hear = list("howls","squeals")
-	emote_see = list("puffs its fur out", "shakes its fur", "stares directly at you")
-
 	meat_amount = 1
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/meat
 
-/mob/living/simple_mob/fluffy/Life()
-	. = ..()
-	if(!. || ai_inactive) return
+	say_list_type = /datum/say_list/fluffy_vr
 
-	if(prob(0.5))
-		lay_down()
-
-	if(resting && prob(5))
-		audible_emote("snuffles.")
+/datum/say_list/fluffy_vr
+	speak = list("Squee","Arf arf","Awoo","Squeak")
+	emote_hear = list("howls","squeals","squeaks", "barks")
+	emote_see = list("puffs its fur out", "shakes its fur", "stares directly at you")

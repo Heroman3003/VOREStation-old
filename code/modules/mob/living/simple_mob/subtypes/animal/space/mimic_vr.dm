@@ -2,20 +2,20 @@
 // Abstract Class
 //
 
-/mob/living/simple_mob/hostile/mimic
+/mob/living/simple_mob/animal/space/mimic
 	name = "crate"
 	desc = "A rectangular steel crate."
-	icon = 'icons/obj/storage.dmi'
+
 	icon_state = "crate"
 	icon_living = "crate"
+	icon = 'icons/obj/storage.dmi'
 
 	faction = "mimic"
-	intelligence_level = SA_ANIMAL
 
 	maxHealth = 250
 	health = 250
-	speed = 4
-	move_to_delay = 8
+	//speed = 4 no idea what this is, conflicts with new AI update.
+	movement_cooldown = 10 //slow crate.
 
 	response_help = "touches"
 	response_disarm = "pushes"
@@ -39,81 +39,44 @@
 
 	meat_type = /obj/item/weapon/reagent_containers/food/snacks/carpmeat
 
+	say_list_type = /datum/say_list/mimic
+	ai_holder_type = /datum/ai_holder/mimic
+
+	var/knockdown_chance = 15 //Stubbing your toe on furniture hurts.
+
 	showvoreprefs = 0 //VOREStation Edit - Hides mechanical vore prefs for mimics. You can't see their gaping maws when they're just sitting idle.
 
-/mob/living/simple_mob/hostile/mimic/set_target()
+/datum/say_list/mimic
+	say_got_target = list("growls")
+
+/datum/ai_holder/mimic
+	wander = FALSE
+	hostile = TRUE
+	threaten = TRUE
+	threaten_timeout = 5 SECONDS
+	threaten_delay = 1 SECONDS //not a threat, more of a delay.
+
+/mob/living/simple_mob/animal/space/carp/apply_melee_effects(var/atom/A)
+	if(isliving(A))
+		var/mob/living/L = A
+		if(prob(knockdown_chance))
+			L.Weaken(3)
+			L.visible_message(span("danger", "\The [src] knocks down \the [L]!"))
+
+/* should be covered by my "growls" say thing, but keeping it just in case.
+/mob/living/simple_mob/animal/space/mimic/set_target()
 	. = ..()
 	if(.)
 		audible_emote("growls at [.]")
-
-/mob/living/simple_mob/hostile/mimic/death()
+*/
+/mob/living/simple_mob/animal/space/mimic/death()
 	..()
 	qdel(src)
 
-/mob/living/simple_mob/hostile/mimic/will_show_tooltip()
+/mob/living/simple_mob/animal/space/mimic/will_show_tooltip()
 	return FALSE
 
-
-//
-// Crate Mimic
-//
-
-// Aggro when you try to open them. Will also pickup loot when spawns and drop it when dies.
-/mob/living/simple_mob/hostile/mimic/crate
-
-	attacktext = list("bitten")
-
-	stop_automated_movement = 1
-	wander = 0
-	var/attempt_open = 0
-
-// Pickup loot
-/mob/living/simple_mob/hostile/mimic/crate/initialize()
-	. = ..()
-	for(var/obj/item/I in loc)
-		I.forceMove(src)
-
-/mob/living/simple_mob/hostile/mimic/crate/DestroySurroundings()
-	..()
-	if(prob(90))
-		icon_state = "[initial(icon_state)]open"
-	else
-		icon_state = initial(icon_state)
-
-/mob/living/simple_mob/hostile/mimic/crate/ListTargets()
-	if(attempt_open)
-		return ..()
-	else
-		return ..(1)
-
-/mob/living/simple_mob/hostile/mimic/crate/set_target()
-	. = ..()
-	if(.)
-		trigger()
-
-/mob/living/simple_mob/hostile/mimic/crate/PunchTarget()
-	. = ..()
-	if(.)
-		icon_state = initial(icon_state)
-
-/mob/living/simple_mob/hostile/mimic/crate/proc/trigger()
-	if(!attempt_open)
-		visible_message("<b>[src]</b> starts to move!")
-		attempt_open = 1
-
-/mob/living/simple_mob/hostile/mimic/crate/adjustBruteLoss(var/damage)
-	trigger()
-	..(damage)
-
-/mob/living/simple_mob/hostile/mimic/crate/LoseTarget()
-	..()
-	icon_state = initial(icon_state)
-
-/mob/living/simple_mob/hostile/mimic/crate/LostTarget()
-	..()
-	icon_state = initial(icon_state)
-
-/mob/living/simple_mob/hostile/mimic/crate/death()
+/mob/living/simple_mob/animal/space/mimic/death()
 	var/obj/structure/closet/crate/C = new(get_turf(src))
 	// Put loot in crate
 	for(var/obj/O in src)
@@ -122,7 +85,80 @@
 		O.forceMove(C)
 	..()
 
-/mob/living/simple_mob/hostile/mimic/crate/PunchTarget()
+/mob/living/simple_mob/animal/space/mimic/initialize()
+	. = ..()
+	for(var/obj/item/I in loc)
+		I.forceMove(src)
+/* I honestly have no idea what's happening down there so I'm just taking the essentials and yeeting.
+//
+// Crate Mimic
+//
+
+// Aggro when you try to open them. Will also pickup loot when spawns and drop it when dies.
+/mob/living/simple_mob/animal/space/mimic/crate
+
+	attacktext = list("bitten")
+
+//	stop_automated_movement = 1 we don't need these
+//	wander = 0
+	var/attempt_open = 0
+
+// Pickup loot
+/mob/living/simple_mob/animal/space/mimic/crate/initialize()
+	. = ..()
+	for(var/obj/item/I in loc)
+		I.forceMove(src)
+/* I can't find an equivilant to this, don't know why we really have it even so...
+/mob/living/simple_mob/animal/space/mimic/crate/DestroySurroundings()
+	..()
+	if(prob(90))
+		icon_state = "[initial(icon_state)]open"
+	else
+		icon_state = initial(icon_state)
+*/
+/mob/living/simple_mob/animal/space/mimic/crate/ListTargets()
+	if(attempt_open)
+		return ..()
+	else
+		return ..(1)
+
+/mob/living/simple_mob/animal/space/mimic/crate/set_target()
+	. = ..()
+	if(.)
+		trigger()
+
+/mob/living/simple_mob/animal/space/mimic/crate/PunchTarget()
+	. = ..()
+	if(.)
+		icon_state = initial(icon_state)
+
+/mob/living/simple_mob/animal/space/mimic/crate/proc/trigger()
+	if(!attempt_open)
+		visible_message("<b>[src]</b> starts to move!")
+		attempt_open = 1
+
+/mob/living/simple_mob/animal/space/mimic/crate/adjustBruteLoss(var/damage)
+	trigger()
+	..(damage)
+
+/mob/living/simple_mob/animal/space/mimic/crate/LoseTarget()
+	..()
+	icon_state = initial(icon_state)
+
+/mob/living/simple_mob/animal/space/mimic/crate/LostTarget()
+	..()
+	icon_state = initial(icon_state)
+
+/mob/living/simple_mob/animal/space/mimic/crate/death()
+	var/obj/structure/closet/crate/C = new(get_turf(src))
+	// Put loot in crate
+	for(var/obj/O in src)
+		if(isbelly(O)) //VOREStation edit
+			continue
+		O.forceMove(C)
+	..()
+
+/mob/living/simple_mob/animal/space/mimic/crate/PunchTarget()
 	. =..()
 	var/mob/living/L = .
 	if(istype(L))
@@ -136,7 +172,7 @@
 
 var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/cable, /obj/structure/window, /obj/item/projectile/animate)
 
-/mob/living/simple_mob/hostile/mimic/copy
+/mob/living/simple_mob/animal/space/mimic/copy
 
 	health = 100
 	maxHealth = 100
@@ -144,11 +180,11 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 	var/destroy_objects = 0
 	var/knockdown_people = 0
 
-/mob/living/simple_mob/hostile/mimic/copy/New(loc, var/obj/copy, var/mob/living/creator)
+/mob/living/simple_mob/animal/space/mimic/copy/New(loc, var/obj/copy, var/mob/living/creator)
 	..(loc)
 	CopyObject(copy, creator)
 
-/mob/living/simple_mob/hostile/mimic/copy/death()
+/mob/living/simple_mob/animal/space/mimic/copy/death()
 
 	for(var/atom/movable/M in src)
 		if(isbelly(M)) //VOREStation edit
@@ -156,12 +192,12 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 		M.forceMove(get_turf(src))
 	..()
 
-/mob/living/simple_mob/hostile/mimic/copy/ListTargets()
+/mob/living/simple_mob/animal/space/mimic/copy/ListTargets()
 	// Return a list of targets that isn't the creator
 	. = ..()
 	return . - creator
 
-/mob/living/simple_mob/hostile/mimic/copy/proc/CopyObject(var/obj/O, var/mob/living/creator)
+/mob/living/simple_mob/animal/space/mimic/copy/proc/CopyObject(var/obj/O, var/mob/living/creator)
 
 	if((istype(O, /obj/item) || istype(O, /obj/structure)) && !is_type_in_list(O, protected_objects))
 
@@ -193,11 +229,11 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 		return 1
 	return
 
-/mob/living/simple_mob/hostile/mimic/copy/DestroySurroundings()
+/mob/living/simple_mob/animal/space/mimic/copy/DestroySurroundings()
 	if(destroy_objects)
 		..()
 
-/mob/living/simple_mob/hostile/mimic/copy/PunchTarget()
+/mob/living/simple_mob/animal/space/mimic/copy/PunchTarget()
 	. =..()
 	if(knockdown_people)
 		var/mob/living/L = .
@@ -205,3 +241,4 @@ var/global/list/protected_objects = list(/obj/structure/table, /obj/structure/ca
 			if(prob(15))
 				L.Weaken(1)
 				L.visible_message("<span class='danger'>\the [src] knocks down \the [L]!</span>")
+*/

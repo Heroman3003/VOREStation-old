@@ -1,15 +1,16 @@
-/mob/living/simple_mob/snake
+/mob/living/simple_mob/animal/space/snake
 	name = "snake"
 	desc = "A big thick snake."
-	icon = 'icons/mob/snake_vr.dmi'
+
 	icon_state = "snake"
 	icon_living = "snake"
 	icon_dead = "snake_dead"
+	icon = 'icons/mob/snake_vr.dmi'
 
 	maxHealth = 20
 	health = 20
 
-	turns_per_move = 8 // SLOW-ASS MUTHAFUCKA
+	movement_cooldown = 8 // SLOW-ASS MUTHAFUCKA, I hope.
 
 	response_help  = "pets"
 	response_disarm = "shoos"
@@ -19,17 +20,75 @@
 	melee_damage_upper = 5
 	attacktext = list("bitten")
 
-	speak_chance = 1
-	speak_emote = list("hisses")
+	say_list_type = /datum/say_list/snake
+	ai_holder_type = /datum/ai_holder/simple_mob/melee
+
+/datum/say_list/snake
+	emote_hear = list("hisses")
 
 //NOODLE IS HERE! SQUEEEEEEEE~
-/mob/living/simple_mob/snake/Noodle
+/mob/living/simple_mob/animal/space/snake/noodle
 	name = "Noodle"
 	desc = "This snake is particularly chubby and demands nothing but the finest of treats."
+
+	ai_holder_type = /datum/ai_holder/simple_mob/passive
+
 	var/turns_since_scan = 0
 	var/obj/movement_target
 
-/mob/living/simple_mob/snake/Noodle/Life() //stolen from Ian in corgi.dm
+/datum/ai_holder/simple_mob/passive
+	base_wander_delay = 11 //Them pets better be slow to not push us around
+
+/datum/ai_holder/simple_mob/passive
+	hostile = FALSE
+	can_flee = TRUE
+	violent_breakthrough = FALSE
+
+/mob/living/simple_mob/animal/space/snake/noodle/Life()
+	..()
+
+	//Not replacing with SA FollowTarget mechanics because Ian behaves... very... specifically.
+
+	//Feeding, chasing food, FOOOOODDDD
+	if(!stat && !resting && !buckled)
+		turns_since_scan++
+		if(turns_since_scan > 5)
+			turns_since_scan = 0
+			if((movement_target) && !(isturf(movement_target.loc) || ishuman(movement_target.loc) ))
+				movement_target = null
+			if( !movement_target || !(movement_target.loc in oview(src, 3)) )
+				movement_target = null
+				for(var/obj/item/weapon/reagent_containers/food/snacks/snakesnack/S in oview(src,3))
+					if(isturf(S.loc) || ishuman(S.loc))
+						movement_target = S
+						visible_emote("turns towards \the [movement_target] and slithers towards it.")
+						break
+			if(movement_target)
+				step_to(src,movement_target,1)
+				sleep(3)
+				step_to(src,movement_target,1)
+				sleep(3)
+				step_to(src,movement_target,1)
+
+				if(movement_target)		//Not redundant due to sleeps, Item can be gone in 6 decisecomds
+					if (movement_target.loc.x < src.x)
+						set_dir(WEST)
+					else if (movement_target.loc.x > src.x)
+						set_dir(EAST)
+					else if (movement_target.loc.y < src.y)
+						set_dir(SOUTH)
+					else if (movement_target.loc.y > src.y)
+						set_dir(NORTH)
+					else
+						set_dir(SOUTH)
+
+					if(isturf(movement_target.loc) )
+						UnarmedAttack(movement_target)
+					else if(ishuman(movement_target.loc) && prob(20))
+						visible_emote("stares at the [movement_target] that [movement_target.loc] has with an unknowable reptilian gaze.")
+
+/* old eating code, couldn't figure out how to make the "swallows food" thing so I'm keeping this here incase someone wants legacy"
+/mob/living/simple_mob/animal/space/snake/noodle/Life() //stolen from Ian in corgi.dm
 	if(!..())
 		return 0
 
@@ -60,8 +119,18 @@
 					walk(src,0)
 				else if(ishuman(movement_target.loc) && prob(20))
 					visible_emote("stares at the [movement_target] that [movement_target.loc] has with an unknowable reptilian gaze.")
+*/
 
-/mob/living/simple_mob/snake/Noodle/attackby(var/obj/item/O, var/mob/user)
+/mob/living/simple_mob/animal/space/snake/noodle/apply_melee_effects(var/atom/A)
+	if(ismouse(A))
+		var/mob/living/simple_mob/animal/passive/mouse/mouse = A
+		if(mouse.getMaxHealth() < 20) // In case a badmin makes giant mice or something.
+			mouse.splat()
+			visible_emote(pick("swallows \the [mouse] whole!"))
+	else
+		..()
+
+/mob/living/simple_mob/animal/space/snake/noodle/attackby(var/obj/item/O, var/mob/user)
 	if(istype(O, /obj/item/weapon/reagent_containers/food/snacks/snakesnack))
 		visible_message("<span class='notice'>[user] feeds \the [O] to [src].</span>")
 		qdel(O)

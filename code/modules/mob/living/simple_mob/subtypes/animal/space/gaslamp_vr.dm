@@ -10,24 +10,25 @@ kills them.
 TODO: Make them light up and heat the air when exposed to oxygen.
 */
 
-/mob/living/simple_mob/retaliate/gaslamp
+/mob/living/simple_mob/animal/space/gaslamp
 	name = "gaslamp"
 	desc = "Some sort of floaty alien with a warm glow. This creature is endemic to Virgo-3B."
 	tt_desc = "Semaeostomeae virginus"
-	icon = 'icons/mob/vore32x64.dmi'
+
 	icon_state = "gaslamp"
 	icon_living = "gaslamp"
 	icon_dead = "gaslamp-dead"
+	icon = 'icons/mob/vore32x64.dmi'
 
 	faction = "virgo3b"
 	maxHealth = 100
 	health = 100
-	move_to_delay = 4
+	movement_cooldown = 12
 
-	speak_chance = 1
-	emote_see = list("looms", "sways gently")
+	say_list_type = /datum/say_list/gaslamp
+	ai_holder_type = /datum/ai_holder/simple_mob/gaslamp
 
-	speed = 2
+	//speed = 2 not sure what this is, guessing animation, but it conflicts with new system.
 
 	melee_damage_lower = 30 // Because fuck anyone who hurts this sweet, innocent creature.
 	melee_damage_upper = 30
@@ -50,8 +51,21 @@ TODO: Make them light up and heat the air when exposed to oxygen.
 	min_n2 = 0
 	max_n2 = 0
 
+/datum/say_list/gaslamp
+	emote_see = list("looms", "sways gently")
+
+/datum/ai_holder/simple_mob/gaslamp
+	hostile = FALSE // The majority of simplemobs are hostile, gaslamps are nice.
+	cooperative = FALSE
+	retaliate = TRUE //so the monster can attack back
+	returns_home = FALSE
+	can_flee = FALSE
+	speak_chance = 1
+	wander = TRUE
+	base_wander_delay = 9
+
 // Activate Noms!
-/mob/living/simple_mob/retaliate/gaslamp
+/mob/living/simple_mob/animal/space/gaslamp
 	vore_active = 1
 	vore_capacity = 2
 	vore_bump_chance = 90 //they're frickin' jellyfish anenome filterfeeders, get tentacled

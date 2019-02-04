@@ -618,6 +618,7 @@
 	var/ambulance = 0
 	var/ambulance_state = 0
 	var/ambulance_last_switch = 0
+	var/ambulance_volume = 15
 
 /obj/item/weapon/storage/backpack/saddlebag/tempest/ui_action_click()
 	ambulance = !(ambulance)
@@ -631,7 +632,7 @@
 		ambulance_state = 0
 		set_light(2, 1, "#FF0000")
 		while(ambulance)
-			playsound(src.loc, 'sound/items/amulanceweeoo.ogg', 15, 0)
+			playsound(src.loc, 'sound/items/amulanceweeoo.ogg', ambulance_volume, 0)
 			sleep(20)
 	else
 		item_state = "tempestsaddlebag"

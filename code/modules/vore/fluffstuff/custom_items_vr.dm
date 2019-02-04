@@ -612,8 +612,54 @@
 	icon_state = "tempestbag"
 	max_storage_space = INVENTORY_DUFFLEBAG_SPACE //Since they play a macro character, no reason to put custom slowdown code on here.
 	slowdown = 0
-	taurtype = /datum/sprite_accessory/tail/taur/feline/tempest
+	taurtype = /datum/sprite_accessory/tail/taur/feline ///tempest
 	no_message = "These saddlebags seem to be fitted for someone else, and keep slipping off!"
+	action_button_name = "Toggle Ambmlemance Mode"
+	var/ambulance = 0
+	var/ambulance_state = 0
+	var/ambulance_last_switch = 0
+
+/obj/item/weapon/storage/backpack/saddlebag/tempest/ui_action_click()
+	ambulance = !(ambulance)
+	if(ambulance)
+		processing_objects.Add(src)
+		item_state = "tempestsaddlebag-red"
+		icon_state = "tempestbag-red"
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_back()
+		ambulance_state = 0
+		set_light(2, 1, "#FF0000")
+		while(ambulance)
+			playsound(src.loc, 'sound/items/amulanceweeoo.ogg', 15, 0)
+			sleep(20)
+	else
+		item_state = "tempestsaddlebag"
+		icon_state = "tempestbag"
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_back()
+		set_light(0)
+
+/obj/item/weapon/storage/backpack/saddlebag/tempest/process()
+	if(!ambulance)
+		processing_objects.Remove(src)
+		return
+	if(world.time - ambulance_last_switch > 15)
+		ambulance_state = !(ambulance_state)
+		var/newcolor = "red"
+		var/newlight = "#FF0000"
+		if(ambulance_state)
+			newcolor = "blue"
+			newlight = "#0000FF"
+		item_state = "tempestsaddlebag-[newcolor]"
+		icon_state = "tempestbag-[newcolor]"
+		if (ismob(src.loc))
+			var/mob/M = src.loc
+			M.update_inv_back()
+		set_light(2, 1, newlight)
+		ambulance_last_switch = world.time
+
 
 //WickedTempest: Chakat Tempest
 /obj/item/weapon/implant/reagent_generator/tempest
@@ -1942,7 +1988,7 @@
 
 	icon = 'icons/vore/custom_items_vr.dmi'
 	icon_state = "penlightlynn"
-	
+
 //Knightfall5:Ashley Kifer
 /obj/item/clothing/accessory/medal/nobel_science/fluff/ashley
 	name = "nobel sciences award"

@@ -435,6 +435,16 @@ var/global/list/latejoin_tram   = list()
 /obj/machinery/cryopod/robot/door/dorms
 	spawnpoint_type = /datum/spawnpoint/tram
 
+//Tether-unique network cameras
+/obj/machinery/camera/network/tether
+	network = list(NETWORK_TETHER)
+
+/obj/machinery/camera/network/tcomms
+	network = list(NETWORK_TCOMMS)
+
+/obj/machinery/camera/network/outside
+	network = list(NETWORK_OUTSIDE)
+
 //
 // ### Wall Machines On Full Windows ###
 // To make sure wall-mounted machines placed on full-tile windows are clickable they must be above the window

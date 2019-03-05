@@ -66,7 +66,8 @@
 "aan" = (
 /obj/machinery/camera/network/cargo{
 	dir = 1;
-	name = "security camera"
+	name = "security camera";
+	c_tag = "Mining External Access"
 	},
 /obj/machinery/conveyor_switch/oneway{
 	convdir = -1;
@@ -498,7 +499,9 @@
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/mining_main/refinery)
 "abc" = (
-/obj/machinery/camera/network/cargo,
+/obj/machinery/camera/network/cargo{
+	c_tag = "Mining Refinery West"
+	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -1024,7 +1027,8 @@
 "abX" = (
 /obj/machinery/camera/network/cargo{
 	dir = 1;
-	name = "security camera"
+	name = "security camera";
+	c_tag = "Mining Refinery East"
 	},
 /obj/structure/cable/green{
 	d1 = 4;
@@ -1109,7 +1113,9 @@
 /obj/effect/floor_decal/corner/brown/border{
 	dir = 1
 	},
-/obj/machinery/camera/network/cargo,
+/obj/machinery/camera/network/cargo{
+	c_tag = "Mining Equipment Storage East"
+	},
 /obj/structure/sign/nosmoking_2{
 	pixel_y = 30
 	},
@@ -1193,7 +1199,8 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/camera/network/cargo{
-	dir = 4
+	dir = 4;
+	c_tag = "Mining Equipment Storage West"
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals7{
 	dir = 5
@@ -1230,7 +1237,9 @@
 /obj/machinery/light_switch{
 	pixel_x = 25
 	},
-/obj/machinery/camera/network/cargo,
+/obj/machinery/camera/network/cargo{
+	c_tag = "Mining EVA"
+	},
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/mining_main/eva)
 "acm" = (
@@ -2376,7 +2385,9 @@
 /obj/machinery/light_switch{
 	pixel_x = 25
 	},
-/obj/machinery/camera/network/cargo,
+/obj/machinery/camera/network/cargo{
+	c_tag = "Mining Ore Storage"
+	},
 /turf/simulated/floor/tiled/steel_dirty,
 /area/tether/surfacebase/mining_main/ore)
 "aeJ" = (
@@ -2469,7 +2480,9 @@
 /obj/effect/floor_decal/corner/brown/border{
 	dir = 1
 	},
-/obj/machinery/camera/network/mining,
+/obj/machinery/camera/network/cargo{
+	c_tag = "Mining Lobby East"
+	},
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/mining_main/lobby)
 "aeU" = (
@@ -2644,7 +2657,8 @@
 /area/storage/primary)
 "aft" = (
 /obj/machinery/camera/network/civilian{
-	dir = 2
+	dir = 2;
+	c_tag = "Primary Tool Storage"
 	},
 /turf/simulated/floor/tiled,
 /area/storage/primary)
@@ -3057,8 +3071,9 @@
 /obj/effect/floor_decal/corner/brown/bordercorner2{
 	dir = 8
 	},
-/obj/machinery/camera/network/mining{
-	dir = 4
+/obj/machinery/camera/network/cargo{
+	dir = 4;
+	c_tag = "Mining Lobby West"
 	},
 /obj/effect/floor_decal/steeldecal/steel_decals4{
 	dir = 4
@@ -3500,7 +3515,7 @@
 /turf/simulated/floor/tiled,
 /area/hallway/lower/first_west)
 "ahH" = (
-/obj/machinery/camera/network/civilian{
+/obj/machinery/camera/network/northern_star{
 	dir = 2
 	},
 /obj/effect/floor_decal/borderfloor{
@@ -4733,7 +4748,9 @@
 "akf" = (
 /obj/machinery/washing_machine,
 /obj/machinery/atmospherics/unary/vent_scrubber/on,
-/obj/machinery/camera/network/civilian,
+/obj/machinery/camera/network/civilian{
+	c_tag = "Surface EVA Access"
+	},
 /obj/structure/sign/nosmoking_2{
 	pixel_y = 30
 	},
@@ -5365,7 +5382,8 @@
 /area/maintenance/lower/vacant_site)
 "alZ" = (
 /obj/machinery/camera/network/civilian{
-	dir = 9
+	dir = 9;
+	c_tag = "Surface EVA External Access"
 	},
 /turf/simulated/floor/tiled/steel_dirty/virgo3b,
 /area/storage/surface_eva/external)
@@ -6421,7 +6439,8 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/engineering{
-	dir = 1
+	dir = 1;
+	c_tag = "Substation - Mining"
 	},
 /turf/simulated/floor,
 /area/maintenance/substation/mining)
@@ -6709,7 +6728,8 @@
 	icon_state = "2-4"
 	},
 /obj/machinery/camera/network/civilian{
-	dir = 4
+	dir = 4;
+	c_tag = "Locker Room"
 	},
 /obj/effect/floor_decal/borderfloor/corner2{
 	dir = 8
@@ -9358,7 +9378,9 @@
 /turf/simulated/floor/tiled/monotile,
 /area/crew_quarters/locker/laundry_arrival)
 "awG" = (
-/obj/machinery/camera/network/civilian,
+/obj/machinery/camera/network/civilian{
+	c_tag = "Arrivals Laundry"
+	},
 /obj/machinery/vending/coffee,
 /obj/effect/floor_decal/corner/lightgrey{
 	dir = 9
@@ -13183,7 +13205,8 @@
 	pixel_y = -22
 	},
 /obj/machinery/camera/network/civilian{
-	dir = 1
+	dir = 1;
+	c_tag = "Surface EVA Storage"
 	},
 /obj/item/clothing/glasses/goggles,
 /obj/item/clothing/glasses/goggles,
@@ -13700,7 +13723,8 @@
 	pixel_y = 0
 	},
 /obj/machinery/camera/network/civilian{
-	dir = 1
+	dir = 1;
+	c_tag = "Art Supply Storage"
 	},
 /turf/simulated/floor/tiled,
 /area/storage/art)
@@ -14637,7 +14661,8 @@
 	dir = 1
 	},
 /obj/machinery/camera/network/engineering{
-	dir = 1
+	dir = 1;
+	c_tag = "Drone Fabrication"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/drone_fabrication)
@@ -14716,7 +14741,9 @@
 /obj/effect/floor_decal/techfloor{
 	dir = 1
 	},
-/obj/machinery/camera/network/engineering,
+/obj/machinery/camera/network/engineering{
+	c_tag = "Atmospherics Processing North"
+	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos/processing)
 "aIH" = (
@@ -15108,7 +15135,8 @@
 "aJI" = (
 /obj/machinery/portable_atmospherics/canister/empty,
 /obj/machinery/camera/network/engineering{
-	dir = 8
+	dir = 8;
+	c_tag = "Atmospherics Processing North-East"
 	},
 /turf/simulated/floor/tiled/techmaint,
 /area/engineering/atmos/processing)
@@ -15175,7 +15203,8 @@
 	dir = 8
 	},
 /obj/machinery/camera/network/engineering{
-	dir = 4
+	dir = 4;
+	c_tag = "Atmospherics Processing West"
 	},
 /obj/machinery/atmospherics/binary/pump,
 /turf/simulated/floor/tiled/techfloor,
@@ -15505,7 +15534,8 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/engineering{
-	dir = 8
+	dir = 8;
+	c_tag = "Atmospherics Processing South-East"
 	},
 /turf/simulated/floor/tiled/techfloor,
 /area/engineering/atmos/processing)
@@ -15623,7 +15653,8 @@
 "aLz" = (
 /obj/effect/floor_decal/techfloor,
 /obj/machinery/camera/network/engineering{
-	dir = 1
+	dir = 1;
+	c_tag = "Atmospherics Processing South"
 	},
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
 	dir = 4
@@ -16397,7 +16428,8 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/engineering{
-	dir = 4
+	dir = 4;
+	c_tag = "Substation - Civilian West"
 	},
 /turf/simulated/floor/plating,
 /area/maintenance/substation/civ_west)
@@ -20276,7 +20308,8 @@
 	dir = 4
 	},
 /obj/machinery/camera/network/civilian{
-	dir = 9
+	dir = 9;
+	c_tag = "Public Garden Hallway"
 	},
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/public_garden)
@@ -25441,7 +25474,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/camera/network/engineering{
-	dir = 1
+	dir = 1;
+	c_tag = "Atmospherics Processing South-West"
 	},
 /obj/machinery/atmospherics/pipe/manifold/visible/yellow,
 /obj/machinery/meter,
@@ -25947,7 +25981,8 @@
 /area/crew_quarters/visitor_dining)
 "cfW" = (
 /obj/machinery/camera/network/civilian{
-	dir = 4
+	dir = 4;
+	c_tag = "Cafe East"
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/visitor_dining)
@@ -27287,7 +27322,8 @@
 /area/crew_quarters/sleep/Dorm_2)
 "cjW" = (
 /obj/machinery/camera/network/civilian{
-	dir = 1
+	dir = 1;
+	c_tag = "Cafe South"
 	},
 /turf/simulated/floor/lino,
 /area/crew_quarters/visitor_dining)
@@ -27460,7 +27496,8 @@
 	dir = 10
 	},
 /obj/machinery/camera/network/civilian{
-	dir = 1
+	dir = 1;
+	c_tag = "Public Garden First Floor"
 	},
 /turf/simulated/floor/tiled,
 /area/tether/surfacebase/public_garden_one)

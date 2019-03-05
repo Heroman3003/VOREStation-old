@@ -21703,10 +21703,7 @@
 /turf/simulated/floor/tiled,
 /area/rnd/xenobiology)
 "bEd" = (
-/obj/machinery/computer/security/mining{
-	name = "xenobiology camera monitor";
-	network = list("Xenobiology")
-	},
+/obj/machinery/computer/security/xenobio,
 /turf/simulated/floor/tiled,
 /area/rnd/xenobiology)
 "bEf" = (

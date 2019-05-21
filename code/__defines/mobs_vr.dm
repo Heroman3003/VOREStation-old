@@ -21,6 +21,7 @@
 #define SPECIES_ALRAUNE			"Alraune"
 #define SPECIES_NEVREAN			"Nevrean"
 #define SPECIES_PROTEAN			"Protean"
+#define SPECIES_GOOSLEM			"Gooslem"
 #define SPECIES_RAPALA			"Rapala"
 #define SPECIES_SERGAL			"Sergal"
 #define SPECIES_VASILISSAN		"Vasilissan"

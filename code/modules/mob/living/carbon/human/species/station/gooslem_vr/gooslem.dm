@@ -13,7 +13,7 @@
 	flesh_color = "#505050"
 	base_color = "#FFFFFF" //Color mult, start out with this
 
-	flags =            NO_SCAN | NO_SLIP | NO_MINOR_CUT | NO_HALLUCINATION | NO_INFECT | NO_PAIN | NO_POISON | NO_EMBED | NO_BLOOD
+	flags =            NO_SCAN | NO_SLIP | NO_MINOR_CUT | NO_HALLUCINATION | NO_INFECT | NO_PAIN | NO_POISON | NO_EMBED
 	appearance_flags = RADIATION_GLOWS
 	spawn_flags		 = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
 	health_hud_intensity = 2
@@ -25,7 +25,7 @@
 	poison_type = null
 
 	virus_immune =	1
-	//blood_volume =	0
+	blood_volume =	300
 	min_age =		18
 	max_age =		200
 	brute_mod =		0 //Brute isn't very effective, they're strongslem
@@ -98,3 +98,6 @@
 		)
 
 	var/global/list/abilities = list()
+
+/mob/living/carbon/human/gooslem/Initialize(var/new_loc)
+	return ..(new_loc, SPECIES_GOOSLEM)

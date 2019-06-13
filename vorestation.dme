@@ -2601,6 +2601,7 @@
 #include "code\modules\organs\internal\organ_internal.dm"
 #include "code\modules\organs\internal\voicebox.dm"
 #include "code\modules\organs\subtypes\diona.dm"
+#include "code\modules\organs\subtypes\gooslem_vr.dm"
 #include "code\modules\organs\subtypes\indestructible.dm"
 #include "code\modules\organs\subtypes\machine.dm"
 #include "code\modules\organs\subtypes\nano.dm"

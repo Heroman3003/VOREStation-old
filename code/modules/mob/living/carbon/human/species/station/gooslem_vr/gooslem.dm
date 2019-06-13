@@ -18,19 +18,19 @@
 	spawn_flags		 = SPECIES_CAN_JOIN | SPECIES_IS_WHITELISTED
 	health_hud_intensity = 2
 	num_alternate_languages = 3
-	assisted_langs = list(LANGUAGE_ROOTLOCAL, LANGUAGE_ROOTGLOBAL, LANGUAGE_VOX)
+	//assisted_langs = list(LANGUAGE_ROOTLOCAL, LANGUAGE_ROOTGLOBAL, LANGUAGE_VOX)
 	color_mult = TRUE
 
 	breath_type = null
 	poison_type = null
 
 	virus_immune =	1
-	blood_volume =	300
+	blood_volume =	700
 	min_age =		18
 	max_age =		200
-	brute_mod =		0 //Brute isn't very effective, they're strongslem
-	burn_mod =		2.0 //Burn, however, is
-	oxy_mod =		0
+	brute_mod =		0 //Brute is ineffective, they're strongslem
+	burn_mod =		2.0 //Burn, however...
+	oxy_mod =		0 //Breathing? Wassat?
 
 	//cold_level_1 = 280 //Default 260 - Lower is better
 	//cold_level_2 = 220 //Default 200
@@ -63,17 +63,17 @@
 		O_BRAIN = /obj/item/organ/internal/mmi_holder/posibrain/nano
 		)
 	has_limbs = list(
-		BP_TORSO =  list("path" = /obj/item/organ/external/chest/unbreakable/nano),
-		BP_GROIN =  list("path" = /obj/item/organ/external/groin/unbreakable/nano),
-		BP_HEAD =   list("path" = /obj/item/organ/external/head/unbreakable/nano),
-		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/unbreakable/nano),
-		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/unbreakable/nano),
-		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/unbreakable/nano),
-		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/unbreakable/nano),
-		BP_L_HAND = list("path" = /obj/item/organ/external/hand/unbreakable/nano),
-		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/unbreakable/nano),
-		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/unbreakable/nano),
-		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/unbreakable/nano)
+		BP_TORSO =  list("path" = /obj/item/organ/external/chest/indestructible/gooslem),
+		BP_GROIN =  list("path" = /obj/item/organ/external/groin/indestructible/gooslem),
+		BP_HEAD =   list("path" = /obj/item/organ/external/head/indestructible/gooslem),
+		BP_L_ARM =  list("path" = /obj/item/organ/external/arm/indestructible/gooslem),
+		BP_R_ARM =  list("path" = /obj/item/organ/external/arm/right/indestructible/gooslem),
+		BP_L_LEG =  list("path" = /obj/item/organ/external/leg/indestructible/gooslem),
+		BP_R_LEG =  list("path" = /obj/item/organ/external/leg/right/indestructible/gooslem),
+		BP_L_HAND = list("path" = /obj/item/organ/external/hand/indestructible/gooslem),
+		BP_R_HAND = list("path" = /obj/item/organ/external/hand/right/indestructible/gooslem),
+		BP_L_FOOT = list("path" = /obj/item/organ/external/foot/indestructible/gooslem),
+		BP_R_FOOT = list("path" = /obj/item/organ/external/foot/right/indestructible/gooslem)
 		)
 
 	heat_discomfort_strings = list("You feel too warm.")

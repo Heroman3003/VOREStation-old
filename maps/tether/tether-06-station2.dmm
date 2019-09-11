@@ -213,7 +213,7 @@
 "ee" = (/obj/machinery/atmospherics/pipe/simple/hidden{dir = 4},/obj/machinery/door/airlock/maintenance/common,/obj/machinery/door/firedoor/glass,/turf/simulated/floor/tiled/dark,/area/ai_monitored/storage/eva)
 "ef" = (/obj/machinery/meter,/obj/machinery/atmospherics/pipe/simple/hidden{dir = 5; icon_state = "intact"},/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor/tiled/dark,/area/ai_monitored/storage/eva)
 "eg" = (/obj/structure/grille,/obj/structure/window/reinforced/full,/obj/structure/window/reinforced,/obj/machinery/door/firedoor/glass,/turf/simulated/floor/plating,/area/vacant/vacant_restaurant_upper)
-"eh" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor,/area/bridge/meeting_room)
+"eh" = (/obj/structure/morgue,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
 "ei" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/disposalpipe/segment{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/alarm{dir = 1; icon_state = "alarm0"; pixel_y = -22},/turf/simulated/floor,/area/bridge/meeting_room)
 "ej" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/obj/machinery/alarm{dir = 8; pixel_x = 25; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/storage/tech)
 "ek" = (/obj/effect/floor_decal/techfloor{dir = 8},/obj/structure/stairs/north,/turf/simulated/floor/bluegrid,/area/ai_upload)
@@ -255,7 +255,7 @@
 "eU" = (/turf/simulated/wall,/area/medical/virologyisolation)
 "eV" = (/obj/structure/table/wooden_reinforced,/obj/item/weapon/paper_bin{pixel_x = 1; pixel_y = 8},/obj/item/weapon/pen/blue{pixel_x = -2; pixel_y = -2},/obj/item/weapon/pen,/obj/item/weapon/pen/red{pixel_x = 2; pixel_y = 2},/turf/simulated/floor/carpet/bcarpet,/area/tether/station/public_meeting_room)
 "eW" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/turf/simulated/floor/tiled,/area/tether/exploration/staircase)
-"eX" = (/turf/space,/area/medical/virology)
+"eX" = (/obj/machinery/door/firedoor/glass,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor,/area/maintenance/evahallway)
 "eY" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/status_display{pixel_y = 30},/turf/simulated/floor/tiled,/area/tether/exploration/staircase)
 "eZ" = (/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply,/turf/simulated/floor/tiled,/area/tether/exploration/staircase)
 "fa" = (/obj/machinery/door/firedoor/glass,/obj/structure/grille,/obj/structure/window/reinforced/polarized/full{id = "interrogation"},/obj/structure/window/reinforced/tinted{dir = 8; icon_state = "twindow"},/obj/structure/window/reinforced/tinted,/obj/structure/window/reinforced/tinted{dir = 1},/turf/simulated/floor,/area/security/interrogation)
@@ -273,7 +273,7 @@
 "fm" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/tiled/techfloor,/area/ai_upload)
 "fn" = (/obj/effect/floor_decal/industrial/outline/grey,/obj/structure/window/reinforced{dir = 4},/turf/simulated/floor/tiled/techfloor,/area/ai_upload)
 "fo" = (/obj/effect/floor_decal/techfloor{dir = 4},/obj/machinery/atmospherics/pipe/zpipe/up/supply{dir = 8},/turf/simulated/floor/bluegrid,/area/ai_upload)
-"fp" = (/turf/simulated/floor/tiled/dark,/area/medical/virology)
+"fp" = (/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
 "fq" = (/turf/simulated/shuttle/wall/voidcraft/green{hard_corner = 1},/area/tether/elevator)
 "fr" = (/obj/random/junk,/obj/random/junk,/turf/simulated/floor,/area/maintenance/station/sec_lower)
 "fs" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/turf/simulated/floor/tiled,/area/tether/exploration/crew)
@@ -298,7 +298,7 @@
 "fL" = (/obj/machinery/camera/network/security{icon_state = "camera"; dir = 8},/turf/simulated/floor/tiled/dark,/area/security/interrogation)
 "fM" = (/turf/simulated/floor/wood,/area/maintenance/substation/medical)
 "fN" = (/obj/random/trash_pile,/turf/simulated/floor,/area/maintenance/station/sec_lower)
-"fO" = (/turf/space,/area/crew_quarters/medbreak)
+"fO" = (/obj/structure/morgue{dir = 8},/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
 "fP" = (/obj/structure/cable/cyan{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/hologram/holopad,/turf/simulated/floor/tiled/techfloor,/area/ai_upload)
 "fQ" = (/obj/structure/bed/chair/office/dark{dir = 8},/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/carpet/bcarpet,/area/tether/station/public_meeting_room)
 "fR" = (/obj/structure/grille,/obj/structure/window/reinforced/full,/obj/structure/window/reinforced{dir = 4},/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor,/area/maintenance/station/exploration)
@@ -333,7 +333,7 @@
 "gu" = (/obj/effect/floor_decal/borderfloor/corner{dir = 1},/obj/effect/floor_decal/corner/yellow/bordercorner{icon_state = "bordercolorcorner"; dir = 1},/turf/simulated/floor/tiled,/area/engineering/locker_room)
 "gv" = (/obj/structure/railing{dir = 8},/turf/simulated/open,/area/engineering/locker_room)
 "gw" = (/turf/simulated/open,/area/engineering/locker_room)
-"gx" = (/turf/space,/area/medical/virologyisolation)
+"gx" = (/turf/simulated/floor,/area/medical/virology)
 "gy" = (/obj/effect/floor_decal/borderfloor{dir = 1; pixel_y = 0},/obj/effect/floor_decal/corner/red/border{dir = 1},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/machinery/light{dir = 1},/turf/simulated/floor/tiled,/area/security/security_cell_hallway)
 "gz" = (/obj/effect/floor_decal/borderfloor{dir = 8; icon_state = "borderfloor"; pixel_x = 0},/obj/effect/floor_decal/corner/purple/border{icon_state = "bordercolor"; dir = 8},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 6},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 5},/obj/structure/table/woodentable,/obj/item/weapon/paper_bin,/obj/item/device/taperecorder,/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled,/area/tether/exploration/crew)
 "gA" = (/obj/structure/bed/chair/office/dark{dir = 8},/turf/simulated/floor/tiled,/area/tether/exploration/crew)
@@ -775,7 +775,7 @@
 "oU" = (/obj/machinery/atmospherics/unary/vent_pump/on,/turf/simulated/floor/tiled,/area/hallway/station/starboard)
 "oV" = (/obj/structure/cable{d1 = 1; d2 = 2; icon_state = "1-2"; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/light{dir = 4; icon_state = "tube1"; pixel_x = 0},/obj/effect/floor_decal/borderfloor{dir = 4},/obj/effect/floor_decal/corner/lightgrey/border{dir = 4},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 10},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 9},/turf/simulated/floor/tiled,/area/hallway/station/starboard)
 "oW" = (/turf/simulated/wall/r_wall,/area/medical/virology)
-"oX" = (/obj/machinery/door/firedoor/glass,/obj/machinery/door/airlock/maintenance/command,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/turf/simulated/floor,/area/maintenance/evahallway)
+"oX" = (/turf/simulated/floor,/area/medical/virologyisolation)
 "oY" = (/turf/simulated/wall/r_wall,/area/ai_monitored/storage/eva)
 "oZ" = (/obj/structure/grille,/obj/structure/sign/securearea,/obj/machinery/door/firedoor/border_only,/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/window/reinforced/full,/turf/simulated/floor/plating,/area/ai_monitored/storage/eva)
 "pa" = (/obj/machinery/door/airlock/glass_command{id_tag = "evadoors"; name = "E.V.A."; req_access = list(); req_one_access = list(18,19,43,67)},/obj/machinery/door/firedoor/glass,/turf/simulated/floor/tiled/steel_grid,/area/ai_monitored/storage/eva)
@@ -902,7 +902,7 @@
 "rr" = (/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/turf/simulated/floor/tiled,/area/hallway/station/starboard)
 "rs" = (/turf/simulated/wall,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
 "rt" = (/obj/machinery/bodyscanner{dir = 4},/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
-"ru" = (/obj/structure/table/glass,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"ru" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/beakers,/obj/random/medical,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
 "rv" = (/obj/structure/cable{icon_state = "1-2"},/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/obj/effect/floor_decal/borderfloor{dir = 4},/obj/effect/floor_decal/corner/lightgrey/border{dir = 4},/turf/simulated/floor/tiled/dark,/area/tether/station/public_meeting_room)
 "rw" = (/obj/item/device/radio/intercom{dir = 8; pixel_x = -24},/obj/effect/floor_decal/borderfloor{dir = 8; icon_state = "borderfloor"; pixel_x = 0},/obj/effect/floor_decal/corner/lightgrey/border{dir = 8},/turf/simulated/floor/tiled/dark,/area/tether/station/public_meeting_room)
 "rx" = (/obj/structure/bed/chair/office/dark{dir = 8},/obj/structure/disposalpipe/segment,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/turf/simulated/floor/carpet/bcarpet,/area/tether/station/public_meeting_room)
@@ -947,7 +947,7 @@
 "sk" = (/turf/simulated/floor/tiled/white,/area/space)
 "sl" = (/turf/simulated/wall,/area/space)
 "sm" = (/obj/machinery/vending/fitness,/obj/effect/floor_decal/borderfloor{dir = 6},/obj/effect/floor_decal/corner/lightgrey/border{dir = 6},/obj/effect/floor_decal/borderfloor/corner2{dir = 6},/obj/effect/floor_decal/corner/lightgrey/bordercorner2{dir = 6},/turf/simulated/floor/tiled/dark,/area/medical/biostorage)
-"sn" = (/turf/simulated/floor/grass,/area/medical/biostorage)
+"sn" = (/obj/machinery/disposal,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
 "so" = (/turf/simulated/floor/plating,/area/medical/biostorage)
 "sp" = (/obj/machinery/door/airlock/glass_engineering{name = "Engineering Hardsuits"; req_one_access = list(11,24)},/obj/machinery/door/firedoor/glass,/turf/simulated/floor/tiled,/area/ai_monitored/storage/eva)
 "sq" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/structure/table/reinforced,/obj/machinery/camera/network/security{dir = 8},/obj/fiftyspawner/rglass,/obj/fiftyspawner/rods,/obj/effect/floor_decal/industrial/warning{dir = 4},/turf/simulated/floor/tiled,/area/ai_monitored/storage/eva)
@@ -1029,7 +1029,7 @@
 "tO" = (/obj/machinery/computer/operating{dir = 8},/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
 "tP" = (/obj/machinery/optable,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
 "tQ" = (/obj/machinery/oxygen_pump/anesthetic,/turf/simulated/wall,/area/hallway/secondary/escape/medical_escape_pod_hallway)
-"tR" = (/turf/space,/area/medical/virologyaccess)
+"tR" = (/turf/simulated/floor/plating,/area/medical/virology)
 "tS" = (/obj/structure/table/standard,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
 "tT" = (/obj/machinery/iv_drip,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
 "tU" = (/turf/simulated/floor/plating,/area/medical/medbay_emt_bay)
@@ -1059,6 +1059,15 @@
 "us" = (/turf/simulated/floor/plating,/area/maintenance/substation/medical)
 "ut" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/medical/virology)
 "uu" = (/obj/structure/bed/chair{dir = 1},/turf/simulated/floor/tiled/white,/area/medical/virology)
+"uv" = (/obj/structure/table/woodentable,/obj/structure/plushie/ian{dir = 8; icon_state = "ianplushie"; pixel_y = 6},/turf/simulated/floor/wood,/area/maintenance/station/micro)
+"uw" = (/obj/structure/flora/pottedplant/fern,/turf/simulated/floor/wood,/area/maintenance/substation/medical)
+"ux" = (/obj/structure/table/steel,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"uy" = (/obj/structure/table/woodentable,/obj/item/toy/plushie/therapy/blue,/turf/simulated/floor/wood,/area/maintenance/station/micro)
+"uz" = (/obj/structure/table/steel,/obj/item/weapon/storage/box/bodybags,/obj/item/weapon/storage/box/bodybags{pixel_x = 4; pixel_y = 4},/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"uA" = (/obj/structure/table/woodentable,/obj/random/plushie,/turf/simulated/floor/wood,/area/maintenance/station/micro)
+"uB" = (/obj/structure/table/steel,/obj/item/device/sleevemate,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"uC" = (/obj/structure/bookcase,/turf/simulated/floor/wood,/area/maintenance/station/micro)
+"uD" = (/obj/item/weapon/storage/secure/safe{pixel_x = 32},/turf/simulated/floor/wood,/area/medical/morgue)
 "uE" = (/obj/machinery/suit_cycler/engineering{req_access = null},/obj/machinery/light/small{dir = 8},/turf/simulated/floor/tiled/dark,/area/ai_monitored/storage/eva)
 "uF" = (/obj/machinery/door/firedoor/border_only,/obj/structure/grille,/obj/structure/cable/green{d2 = 4; icon_state = "0-4"},/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/window/reinforced/full,/turf/simulated/floor/plating,/area/ai_monitored/storage/eva)
 "uG" = (/obj/structure/table/reinforced,/obj/item/clothing/head/welding,/obj/item/weapon/storage/belt/utility,/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/effect/floor_decal/industrial/warning{dir = 8},/obj/machinery/camera/network/command{dir = 4},/turf/simulated/floor/tiled,/area/ai_monitored/storage/eva)
@@ -1075,6 +1084,20 @@
 "uR" = (/obj/structure/extinguisher_cabinet{pixel_x = -27},/obj/effect/floor_decal/borderfloor{dir = 8},/obj/effect/floor_decal/corner/lightgrey/border{dir = 8},/obj/effect/floor_decal/borderfloor/corner2{dir = 10},/obj/effect/floor_decal/corner/lightgrey/bordercorner2{dir = 10},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 6},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 5},/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
 "uS" = (/obj/structure/cable,/obj/machinery/power/apc{dir = 4; name = "east bump"; pixel_x = 28},/obj/effect/floor_decal/borderfloor{dir = 4},/obj/effect/floor_decal/corner/lightgrey/border{dir = 4},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 9},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 10},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/manifold/hidden/supply{dir = 4},/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
 "uT" = (/obj/machinery/atmospherics/unary/vent_scrubber/on,/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
+"uU" = (/obj/structure/table/steel,/obj/item/weapon/paper_bin{pixel_y = 0},/obj/item/weapon/pen/blue{pixel_x = 3; pixel_y = -1},/obj/item/weapon/pen/red{pixel_x = -1; pixel_y = -3},/turf/simulated/floor/tiled/techfloor,/area/medical/virologyaccess)
+"uV" = (/obj/structure/closet/crate/bin,/turf/simulated/floor/wood,/area/medical/morgue)
+"uW" = (/obj/structure/table/steel,/obj/item/weapon/surgical/scalpel,/obj/item/weapon/autopsy_scanner,/obj/item/weapon/surgical/cautery,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"uX" = (/obj/machinery/optable,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"uY" = (/obj/structure/filingcabinet/chestdrawer{desc = "A large drawer filled with autopsy reports."; name = "Autopsy Reports"},/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"uZ" = (/obj/structure/table/steel,/obj/item/weapon/folder/white,/turf/simulated/floor/tiled/techfloor,/area/medical/virology)
+"va" = (/obj/structure/table/steel,/obj/item/device/camera{name = "Autopsy Camera"; pixel_x = -2; pixel_y = 7},/turf/simulated/floor/tiled/techfloor,/area/medical/virologyaccess)
+"vb" = (/obj/structure/flora/pottedplant/fern,/turf/simulated/floor/wood,/area/medical/biostorage)
+"vc" = (/obj/structure/closet/secure_closet/chemical{req_access = list(64); req_one_access = list(5)},/turf/simulated/floor/carpet/blue,/area/medical/biostorage)
+"vd" = (/obj/structure/bed/chair/comfy/brown,/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"ve" = (/obj/machinery/portable_atmospherics/canister/oxygen/prechilled,/turf/simulated/floor/tiled/dark,/area/medical/virologyaccess)
+"vf" = (/obj/machinery/atmospherics/unary/freezer,/turf/simulated/floor/tiled/dark,/area/medical/virologyaccess)
+"vg" = (/obj/structure/table/standard,/obj/item/weapon/tool/wrench,/turf/simulated/floor/tiled/dark,/area/medical/virologyaccess)
+"vh" = (/obj/machinery/washing_machine,/turf/simulated/floor/tiled/dark,/area/medical/virologyaccess)
 "vi" = (/obj/machinery/suit_cycler/mining{req_access = null},/turf/simulated/floor/tiled/dark,/area/ai_monitored/storage/eva)
 "vj" = (/obj/machinery/light{icon_state = "tube1"; dir = 8},/obj/structure/table/reinforced,/obj/item/weapon/storage/toolbox/mechanical{pixel_x = -2; pixel_y = -1},/obj/item/device/multitool,/obj/effect/floor_decal/industrial/warning{dir = 8},/turf/simulated/floor/tiled,/area/ai_monitored/storage/eva)
 "vk" = (/obj/effect/floor_decal/industrial/warning{icon_state = "warning"; dir = 4},/obj/structure/reagent_dispensers/watertank,/turf/simulated/floor/tiled,/area/ai_monitored/storage/eva)
@@ -1089,6 +1112,15 @@
 "vt" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 4},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 4},/obj/effect/floor_decal/steeldecal/steel_decals6{dir = 9},/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
 "vu" = (/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9; pixel_y = 0},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
 "vv" = (/obj/structure/closet/emcloset,/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
+"vw" = (/obj/structure/table/standard,/obj/random/tetheraid,/obj/random/tetheraid,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"vx" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/syringes{pixel_x = 4; pixel_y = 4},/obj/item/weapon/storage/box/syringes,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"vy" = (/obj/item/weapon/cane,/obj/item/weapon/cane,/obj/structure/table/standard,/obj/random/medical,/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"vz" = (/obj/structure/table/standard,/obj/item/device/sleevemate,/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"vA" = (/obj/structure/table/standard,/obj/item/clothing/gloves/sterile/nitrile,/obj/item/clothing/gloves/sterile/nitrile,/obj/item/device/defib_kit/loaded,/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"vB" = (/obj/structure/flora/ausbushes/genericbush,/turf/simulated/floor/grass,/area/medical/biostorage)
+"vC" = (/obj/structure/flora/ausbushes/ppflowers,/turf/simulated/floor/grass,/area/medical/biostorage)
+"vD" = (/obj/structure/bed/chair/comfy/brown{dir = 4},/turf/simulated/floor/carpet/blue,/area/medical/biostorage)
+"vE" = (/obj/structure/table/woodentable,/obj/item/device/flashlight/lamp/green{dir = 2; pixel_x = -5; pixel_y = 4},/turf/simulated/floor/carpet/blue,/area/medical/morgue)
 "vF" = (/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/structure/catwalk,/obj/machinery/power/apc{dir = 1; name = "north bump"; pixel_x = 0; pixel_y = 28},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 6},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 6},/obj/structure/disposalpipe/segment{dir = 4; icon_state = "pipe-c"},/obj/structure/cable/green{d1 = 2; d2 = 4; icon_state = "2-4"},/turf/simulated/floor,/area/maintenance/evahallway)
 "vG" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/structure/disposalpipe/segment{dir = 8; icon_state = "pipe-c"},/obj/structure/cable/green{d1 = 1; d2 = 8; icon_state = "1-8"},/turf/simulated/floor,/area/maintenance/evahallway)
 "vH" = (/obj/structure/table/reinforced,/obj/item/device/assembly/signaler,/obj/item/device/assembly/signaler,/obj/effect/floor_decal/industrial/warning{dir = 10},/turf/simulated/floor/tiled,/area/ai_monitored/storage/eva)
@@ -1104,10 +1136,53 @@
 "vR" = (/obj/machinery/door/airlock/multi_tile/glass{dir = 2; name = "Stairwell"},/obj/effect/floor_decal/steeldecal/steel_decals_central1,/obj/machinery/door/firedoor/glass,/turf/simulated/floor/tiled/monofloor,/area/tether/station/stairs_two)
 "vS" = (/obj/effect/floor_decal/steeldecal/steel_decals6{dir = 6},/turf/simulated/floor/tiled,/area/tether/station/stairs_two)
 "vT" = (/turf/simulated/wall,/area/medical/biostorage)
+"vU" = (/obj/structure/table/woodentable,/obj/item/weapon/paper_bin{pixel_y = 4},/obj/item/weapon/pen{pixel_y = 4},/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"vV" = (/obj/structure/table/woodentable,/obj/item/weapon/folder/white,/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"vW" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 11; pixel_y = 0},/turf/simulated/floor/tiled/dark,/area/medical/virologyaccess)
+"vX" = (/obj/structure/flora/ausbushes/lavendergrass,/mob/living/simple_mob/animal/passive/bird/azure_tit/tweeter,/turf/simulated/floor/grass,/area/medical/biostorage)
+"vY" = (/obj/structure/flora/ausbushes/ywflowers,/turf/simulated/floor/grass,/area/medical/biostorage)
+"vZ" = (/obj/structure/bed/psych,/turf/simulated/floor/carpet/blue,/area/medical/biostorage)
+"wa" = (/obj/structure/table/woodentable,/obj/machinery/computer/med_data/laptop{dir = 4},/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"wb" = (/obj/structure/bed/chair/office/dark{dir = 1},/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"wc" = (/obj/structure/filingcabinet/chestdrawer{name = "Medical Forms"},/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"wd" = (/obj/structure/table/rack,/obj/item/clothing/suit/radiation,/obj/item/clothing/head/radiation,/obj/item/bodybag/cryobag{pixel_x = -2; pixel_y = -2},/obj/item/bodybag/cryobag{pixel_x = 1; pixel_y = 1},/obj/item/weapon/storage/toolbox/emergency{pixel_x = 2; pixel_y = 1},/obj/item/weapon/storage/toolbox/mechanical{pixel_x = -2; pixel_y = -2},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"we" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/o2{pixel_x = 5; pixel_y = 5},/obj/item/weapon/storage/firstaid/o2{pixel_x = 0; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wf" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/adv{pixel_x = 5; pixel_y = 5},/obj/item/weapon/storage/firstaid/adv,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wg" = (/obj/structure/bed/chair/wheelchair{dir = 4},/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"wh" = (/obj/structure/flora/ausbushes/brflowers,/turf/simulated/floor/grass,/area/medical/biostorage)
+"wi" = (/obj/structure/table/woodentable,/obj/item/weapon/clipboard,/turf/simulated/floor/carpet/blue,/area/medical/biostorage)
+"wj" = (/obj/structure/filingcabinet/medical{desc = "A large cabinet with hard copy medical records."; name = "Medical Records"},/turf/simulated/floor/carpet/blue,/area/medical/morgue)
+"wk" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/lights/mixed,/obj/item/device/flashlight,/obj/item/device/radio{pixel_x = -4},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wl" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/toxin{pixel_x = 5; pixel_y = 5},/obj/item/weapon/storage/firstaid/toxin{pixel_x = 0; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wm" = (/obj/structure/table/standard,/obj/item/weapon/storage/firstaid/fire{pixel_x = 5; pixel_y = 5},/obj/item/weapon/storage/firstaid/fire{pixel_x = 0; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
 "wn" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/effect/floor_decal/rust,/turf/simulated/floor,/area/maintenance/evahallway)
 "wo" = (/turf/simulated/wall/r_wall,/area/bridge/meeting_room)
 "wp" = (/obj/structure/cable/cyan{d1 = 1; d2 = 8; icon_state = "1-8"},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{dir = 9},/obj/machinery/atmospherics/pipe/simple/hidden/supply{dir = 10},/obj/effect/landmark/start{name = "Cyborg"},/turf/simulated/floor/tiled/techfloor,/area/ai_cyborg_station)
-"wy" = (/turf/space,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"wq" = (/obj/item/clothing/suit/straight_jacket,/obj/item/clothing/mask/muzzle,/obj/structure/table/standard,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wr" = (/obj/structure/window/reinforced,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"ws" = (/obj/structure/closet/l3closet/medical,/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"wt" = (/turf/simulated/floor,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"wu" = (/obj/structure/table/standard,/obj/item/weapon/storage/box/syringegun,/obj/item/weapon/gun/launcher/syringe,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wv" = (/obj/structure/window/reinforced{dir = 4},/obj/structure/closet/crate{icon_state = "crate"; name = "Grenade Crate"; opened = 0},/obj/item/weapon/grenade/chem_grenade,/obj/item/weapon/grenade/chem_grenade,/obj/item/weapon/grenade/chem_grenade,/obj/item/device/assembly/timer,/obj/item/device/assembly/timer,/obj/item/device/assembly/timer,/obj/item/device/assembly/igniter,/obj/item/device/assembly/igniter,/obj/item/device/assembly/igniter,/obj/item/weapon/tool/screwdriver,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"ww" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wx" = (/obj/structure/disposalpipe/segment{dir = 4},/turf/simulated/floor,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"wy" = (/turf/simulated/mineral/vacuum,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"wz" = (/obj/structure/disposalpipe/segment{dir = 4},/obj/effect/decal/cleanable/dirt,/obj/machinery/door/airlock/maintenance/command{req_access = list(19)},/obj/machinery/door/firedoor/glass,/turf/simulated/floor,/area/bridge/meeting_room)
+"wA" = (/obj/structure/table/standard,/obj/item/device/glasses_kit,/obj/item/weapon/storage/box/rxglasses,/obj/item/weapon/storage/box/rxglasses,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wB" = (/obj/structure/window/reinforced{dir = 8},/obj/machinery/vending/coffee,/turf/simulated/floor/wood,/area/crew_quarters/medbreak)
+"wC" = (/obj/structure/table/standard,/obj/structure/bedsheetbin,/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"wD" = (/turf/simulated/floor/plating,/area/mine/explored/upper_level)
+"wE" = (/turf/simulated/mineral/floor/vacuum,/area/crew_quarters/medical_restroom)
+"wF" = (/turf/simulated/floor/plating,/area/crew_quarters/medical_restroom)
+"wG" = (/turf/simulated/floor/wood,/area/crew_quarters/medbreak)
+"wH" = (/obj/structure/stairs/west,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"wI" = (/obj/structure/bed/roller,/turf/simulated/floor/tiled/white,/area/medical/medbay_emt_bay)
+"wJ" = (/obj/structure/filingcabinet/chestdrawer{name = "Scan Records"},/turf/simulated/floor/tiled/white,/area/medical/medbay_emt_bay)
+"wK" = (/obj/structure/table/glass,/turf/simulated/floor/tiled/white,/area/medical/medbay_emt_bay)
+"wL" = (/obj/structure/table/glass,/obj/random/medical,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"wM" = (/obj/structure/window/reinforced{dir = 1},/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"wN" = (/obj/structure/closet/crate/freezer,/turf/simulated/floor/tiled/white,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"wO" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/bloodpacks,/turf/simulated/floor/tiled/white,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
 "wP" = (/obj/machinery/light/small{dir = 4; pixel_y = 0},/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/turf/simulated/floor,/area/maintenance/evahallway)
 "wQ" = (/obj/structure/table/woodentable,/obj/structure/extinguisher_cabinet{pixel_x = -27},/obj/machinery/computer/guestpass{pixel_y = 32},/turf/simulated/floor/wood,/area/bridge/meeting_room)
 "wR" = (/obj/structure/table/woodentable,/obj/machinery/chemical_dispenser/bar_soft/full,/obj/machinery/keycard_auth{pixel_y = 28},/turf/simulated/floor/wood,/area/bridge/meeting_room)
@@ -1118,16 +1193,66 @@
 "wW" = (/obj/machinery/atm{pixel_y = 30},/turf/simulated/floor/wood,/area/bridge/meeting_room)
 "wX" = (/obj/structure/flora/pottedplant,/turf/simulated/floor/wood,/area/bridge/meeting_room)
 "wY" = (/obj/structure/grille,/obj/structure/window/reinforced/full,/obj/structure/window/reinforced{dir = 4},/obj/machinery/door/firedoor/glass,/turf/simulated/floor/plating,/area/bridge/meeting_room)
+"wZ" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/masks,/turf/simulated/floor/tiled/white,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"xa" = (/obj/structure/table/glass,/obj/item/weapon/storage/box/gloves,/turf/simulated/floor/tiled/white,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"xb" = (/turf/simulated/floor/plating,/area/crew_quarters/medbreak)
+"xc" = (/obj/structure/closet/emcloset,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xd" = (/turf/simulated/floor/plating,/area/space)
+"xe" = (/obj/structure/table/woodentable,/obj/item/weapon/reagent_containers/food/drinks/britcup,/turf/simulated/floor/wood,/area/crew_quarters/medbreak)
+"xf" = (/obj/structure/table/woodentable,/turf/simulated/floor/wood,/area/crew_quarters/medbreak)
+"xg" = (/obj/structure/window/reinforced{dir = 8},/obj/machinery/vending/medical,/turf/simulated/floor/wood,/area/crew_quarters/medbreak)
+"xh" = (/obj/structure/table/bench/wooden,/turf/simulated/floor/wood,/area/crew_quarters/medbreak)
+"xi" = (/obj/structure/table/glass,/obj/random/medical,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"xj" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xk" = (/obj/machinery/vending/medical,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"xl" = (/obj/structure/curtain/open/shower,/obj/machinery/shower{pixel_y = 10},/obj/effect/floor_decal/steeldecal/steel_decals5,/obj/effect/floor_decal/steeldecal/steel_decals5{dir = 1},/obj/effect/floor_decal/steeldecal/steel_decals10{dir = 5},/obj/effect/floor_decal/steeldecal/steel_decals10{dir = 6},/turf/simulated/floor/tiled/white,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"xm" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/medical,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"xn" = (/obj/structure/closet/secure_closet/personal/patient,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xo" = (/obj/machinery/disposal,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xp" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/medical,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xq" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
 "xr" = (/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/turf/simulated/floor,/area/maintenance/evahallway)
 "xs" = (/obj/structure/table/woodentable,/obj/item/weapon/storage/box/cups,/obj/structure/cable/green{d2 = 2; icon_state = "0-2"},/obj/machinery/power/apc{cell_type = /obj/item/weapon/cell/super; dir = 8; name = "west bump"; pixel_x = -28},/turf/simulated/floor/wood,/area/bridge/meeting_room)
 "xt" = (/obj/structure/disposalpipe/segment,/turf/simulated/floor/wood,/area/bridge/meeting_room)
+"xu" = (/obj/structure/bed/chair/office/light{dir = 4},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xv" = (/obj/structure/table/glass,/obj/item/weapon/folder/white,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xw" = (/obj/structure/table/glass,/obj/item/weapon/paper_bin,/obj/item/weapon/pen,/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
+"xx" = (/obj/structure/table/glass,/obj/item/weapon/paper_bin{pixel_y = 4},/obj/item/weapon/pen{pixel_y = 4},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xy" = (/obj/structure/bed/chair/office/light{dir = 8},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xz" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/medical,/turf/simulated/floor/tiled/white,/area/space)
+"xA" = (/obj/structure/table/glass,/obj/machinery/computer/med_data/laptop{dir = 4},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xB" = (/obj/structure/undies_wardrobe,/turf/simulated/floor/tiled/white,/area/space)
+"xC" = (/obj/structure/table/glass,/obj/item/weapon/clipboard,/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
+"xD" = (/obj/structure/table/glass,/obj/machinery/computer/med_data/laptop{dir = 8; pixel_x = 0; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
+"xE" = (/obj/structure/closet/secure_closet/personal/patient,/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
+"xF" = (/obj/structure/bed/padded,/obj/item/weapon/bedsheet/medical,/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
+"xG" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
 "xH" = (/turf/space,/area/mine/explored/upper_level)
+"xI" = (/obj/structure/bed/chair/office/light{dir = 4},/turf/simulated/floor/tiled/white,/area/crew_quarters/medical_restroom)
 "xJ" = (/obj/machinery/door/firedoor/glass,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock/maintenance/command{req_access = list(19)},/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/turf/simulated/floor,/area/bridge/meeting_room)
 "xK" = (/obj/structure/table/woodentable,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/camera/network/command{c_tag = "Command Meeting Room West"; dir = 4},/turf/simulated/floor/wood,/area/bridge/meeting_room)
 "xL" = (/obj/machinery/hologram/holopad,/obj/structure/disposalpipe/segment,/turf/simulated/floor/carpet/sblucarpet,/area/bridge/meeting_room)
 "xM" = (/obj/structure/bed/chair/comfy/black,/turf/simulated/floor/carpet/sblucarpet,/area/bridge/meeting_room)
 "xN" = (/turf/simulated/floor/carpet/sblucarpet,/area/bridge/meeting_room)
+"xO" = (/obj/structure/table/glass,/obj/item/weapon/cane,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xP" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xQ" = (/obj/structure/closet/secure_closet/personal/patient,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xR" = (/obj/structure/toilet{pixel_y = 6},/turf/simulated/floor/tiled/white,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"xS" = (/obj/machinery/recharge_station,/turf/simulated/floor/tiled/techfloor,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"xT" = (/obj/structure/bed/padded,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xU" = (/obj/structure/table/glass,/obj/item/clothing/accessory/stethoscope,/obj/item/device/healthanalyzer,/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"xV" = (/turf/simulated/floor/tiled/steel_grid,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"xW" = (/obj/structure/table/glass,/obj/item/weapon/paper_bin,/obj/item/weapon/pen,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
 "xX" = (/obj/machinery/hologram/holopad,/obj/effect/landmark/start{name = "Cyborg"},/turf/simulated/floor/tiled/techfloor,/area/ai_cyborg_station)
+"xY" = (/obj/structure/table/glass,/obj/item/weapon/clipboard,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"xZ" = (/obj/structure/table/glass,/obj/machinery/computer/med_data/laptop{dir = 8; pixel_x = 0; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"ya" = (/obj/structure/bed/chair/wheelchair{dir = 8},/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
+"yb" = (/obj/machinery/washing_machine,/turf/simulated/floor/tiled/white,/area/hallway/secondary/escape/medical_escape_pod_hallway)
+"yc" = (/obj/structure/bed/chair{dir = 4},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"yd" = (/obj/structure/table/standard,/obj/random/soap,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"ye" = (/obj/structure/sink{dir = 4; icon_state = "sink"; pixel_x = 11; pixel_y = 0},/obj/structure/mirror{dir = 4; pixel_x = 32; pixel_y = 0},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"yf" = (/obj/structure/table/glass,/obj/machinery/computer/med_data/laptop,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"yg" = (/obj/structure/table/glass,/obj/item/weapon/clipboard,/obj/item/weapon/folder/white,/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
 "yh" = (/turf/simulated/open,/area/bridge/meeting_room)
 "yi" = (/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 1},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 8},/obj/effect/floor_decal/steeldecal/steel_decals5,/turf/simulated/floor/tiled,/area/bridge/meeting_room)
 "yj" = (/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 1},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 8},/obj/effect/floor_decal/steeldecal/steel_decals5,/obj/machinery/atmospherics/unary/vent_pump/on{dir = 4},/turf/simulated/floor/tiled,/area/bridge/meeting_room)
@@ -1141,9 +1266,21 @@
 "yr" = (/obj/structure/bed/chair/comfy/black{dir = 8},/obj/effect/landmark/start{name = "Command Secretary"},/turf/simulated/floor/carpet/sblucarpet,/area/bridge/meeting_room)
 "ys" = (/obj/machinery/camera/network/command{c_tag = "Command Meeting Room East"; dir = 9},/turf/simulated/floor/wood,/area/bridge/meeting_room)
 "yt" = (/obj/machinery/light{icon_state = "tube1"; dir = 4},/obj/effect/landmark{name = "JoinLateCyborg"},/obj/machinery/computer/cryopod/robot{dir = 8; pixel_x = 28},/turf/simulated/floor/tiled/techfloor,/area/ai_cyborg_station)
+"yu" = (/obj/structure/bed/chair/office/light{dir = 1},/turf/simulated/floor/tiled/white,/area/mine/explored/upper_level)
+"yv" = (/turf/simulated/mineral/vacuum,/area/medical/virologyaccess)
+"yw" = (/turf/simulated/mineral/vacuum,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
+"yx" = (/obj/structure/bed/chair,/turf/simulated/floor/tiled/white,/area/maintenance/substation/medical)
+"yy" = (/turf/simulated/floor/tiled/white,/area/maintenance/substation/medical)
+"yz" = (/obj/structure/bed/chair{dir = 1},/turf/simulated/floor/tiled/white,/area/maintenance/substation/medical)
 "yA" = (/obj/structure/closet/secure_closet/pilot,/obj/effect/floor_decal/borderfloor{dir = 10},/obj/effect/floor_decal/corner/purple/border{dir = 10},/obj/machinery/light{icon_state = "tube1"; dir = 8},/turf/simulated/floor/tiled,/area/tether/exploration/equipment)
 "yB" = (/turf/space,/area/crew_quarters/medical_restroom)
+"yC" = (/turf/simulated/floor,/area/medical/virologyaccess)
+"yD" = (/obj/structure/catwalk,/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,/obj/machinery/atmospherics/pipe/simple/hidden/supply,/obj/structure/disposalpipe/segment,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/machinery/door/airlock/maintenance/command,/turf/simulated/floor,/area/maintenance/evahallway)
+"yE" = (/obj/machinery/vending/wallmed1{pixel_x = 30},/turf/simulated/floor/tiled/white,/area/medical/morgue)
+"yF" = (/obj/machinery/disposal,/turf/simulated/floor/tiled/white,/area/medical/biostorage)
+"yG" = (/obj/machinery/vending/wallmed1{pixel_x = -30},/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
 "yH" = (/obj/structure/closet/secure_closet/pilot,/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/purple/border,/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 1},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 8},/turf/simulated/floor/tiled,/area/tether/exploration/equipment)
+"yI" = (/obj/machinery/vending/wallmed1{pixel_y = -30},/turf/simulated/floor/tiled/white,/area/crew_quarters/medbreak)
 "yK" = (/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 4},/obj/effect/floor_decal/steeldecal/steel_decals7,/obj/effect/floor_decal/steeldecal/steel_decals5{dir = 1},/turf/simulated/floor/tiled,/area/bridge/meeting_room)
 "yL" = (/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 4},/obj/effect/floor_decal/steeldecal/steel_decals7,/obj/effect/floor_decal/steeldecal/steel_decals5{dir = 1},/obj/machinery/light,/obj/machinery/atmospherics/unary/vent_scrubber/on{dir = 4},/turf/simulated/floor/tiled,/area/bridge/meeting_room)
 "yM" = (/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 4},/obj/effect/floor_decal/steeldecal/steel_decals7,/obj/effect/floor_decal/steeldecal/steel_decals5{dir = 1},/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/turf/simulated/floor/tiled,/area/bridge/meeting_room)
@@ -1156,8 +1293,6 @@
 "za" = (/turf/simulated/wall,/area/hallway/secondary/escape/medical_escape_pod_hallway)
 "zb" = (/obj/machinery/door/firedoor/glass,/obj/structure/cable/green{d1 = 1; d2 = 2; icon_state = "1-2"},/obj/structure/disposalpipe/segment,/obj/machinery/door/airlock/maintenance/command{req_access = list(19)},/turf/simulated/floor,/area/bridge/meeting_room)
 "zc" = (/obj/structure/bed/chair/comfy/black{dir = 1},/turf/simulated/floor/carpet/sblucarpet,/area/bridge/meeting_room)
-"zu" = (/turf/space,/area/shuttle/large_escape_pod1/station{base_turf = /turf/simulated/mineral/floor/vacuum})
-"zz" = (/obj/machinery/door/firedoor/glass,/obj/structure/disposalpipe/segment{dir = 4},/obj/machinery/door/blast/shutters{density = 0; dir = 8; icon_state = "shutter0"; id = "medbayquar"; name = "Medbay Emergency Lockdown Shutters"; opacity = 0},/obj/machinery/door/airlock/maintenance/medical,/turf/simulated/floor,/area/hallway/secondary/escape/medical_escape_pod_hallway)
 "zA" = (/obj/structure/closet/secure_closet/sar,/obj/effect/floor_decal/borderfloor,/obj/effect/floor_decal/corner/purple/border,/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 1},/obj/effect/floor_decal/steeldecal/steel_decals7{dir = 8},/turf/simulated/floor/tiled,/area/tether/exploration/equipment)
 "zB" = (/obj/structure/lattice,/obj/machinery/door/firedoor/glass,/obj/structure/disposalpipe/segment{dir = 4},/obj/structure/cable/green{icon_state = "32-4"},/turf/simulated/open,/area/bridge/meeting_room)
 "zC" = (/obj/structure/cable/green{d1 = 4; d2 = 8; icon_state = "4-8"},/obj/structure/disposalpipe/segment{dir = 4},/obj/effect/floor_decal/rust,/turf/simulated/floor,/area/bridge/meeting_room)
@@ -1555,45 +1690,45 @@ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMFZMsZWNyUkJHaPmdmeejlwmg
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMatRRatZrIXataPmCmDmEmFmGmHmImJmKmKmKmLmMmMmMmMmNmOmOmOmPmQEEkjmRmSmTmUfqfufufufufumtlJlJhCmWmWmWmXmYmZnanblincnhnhngWGnhninhnhnhnknInmkGlmnonqDtDuDvDIDLacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMeMeMFZZrYdJHaPmdntnulwnvkKnwnxnykKnzkJmOmOmOmOnAmMmMmMnBnCnDnEnFnFnGnHfqfufufufufwnJnKnLnMnNnNnNnOnQnNnNnNnNnNnNnRnRnRnRnVnRnRnRnRoonPkYlJnSnTnUlJlJDMDLacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMaaaaFZFROrJHaPnWnXnYlwnZoaobkKococodkJoeofofofofofofogohoiojhrokjLolomfqfqfqfqfqfqonlJopowotototoqosotouovowototototototoxoyoyoyoyozoAleoCoDoEDwouotDNDLacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMaaaaFZDAXMataPaPaPaPkJoaoGoHoIoJoKoLkJoMoMoMoMoMoMoMoMohoioNhroOoPmSoQjjjjjLoRoSkjoToUoVoWoWoWoWoWoWoWoWoWoWoWoWoWoWoWoWoXoYoYoYoYoZpapbpcoZoYoYoYoYpSpSacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMaaaaatatLnatpdpdpdpdkJkJkJkJkJkJkJkJkJoMoMoMoMoMoMoMoMpeoipfhrmppgphpipjkjkjkjkjkjpkplpmoWeXeXeXeXeXeXeXeXeXeXeXeXeXeXoWpvoYpwpwpxpypzpApBpCpDpEpEoYacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMeMeMdXpGpGpGpGpGpGpGpGpGpGpGpGpHpIpJkfpKpKpKpKpKpKpKpKpLpKpMhrhrhrhrpNkjpOpPeJeNpOpTlKpUoWeXeXeXeXeXeXeXeXgxgxgxgxgxgxpZqaoYerqcqdqeqcqfqgqhqiqcetoYacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGqkqkpGpGpGqkpGpGqkqkqlqmpGpGqnqoqpqpqpqpqpqpUUqrqsqtquqvqwqxqyqzqAqBpQpRqCqFqGpUoWeXeXeXeXeXeXeXeXgxgxgxgxgxgxpZpvoYoYoYoYqQqRqSqTqUoYoYoYoYacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapdpGpGqkqVqWqkqkpGpGqXqYedAOrbrcrdrerererereeurergrhrirjrkrkrlVwrmrkrnroqDqErpnPrrpUoWeXeXeXeXeXeXeXeXgxgxgxgxgxgxpZrEoYrFrGpxrHpzrIrJrKrLrMrNoYacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGpGqkqmqkqkpGpGpGpGpGpGpGpGpGqnrOrPrQrPrPrPrSrTrUrVrWrXrYQFXqrZsasbrPrPrPrqscscseoWsEsEsEsEsEsEsEsEeUgxgxgxgxgxpZpvoYerqcspqeqcqfqgsqsrqcqcoYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGsspGqlqkststsusvsvsvsvsvsvsvswswswswswswsxexsdszKIKIKIKIVATOdAsBsBusussDsEsEgooWoWfpfpfpfpfpfpfpfpeUgxgxgxgxgxpZpvoYoYoYoYsPqcsQsRsSsTqcsUeesWsXoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGpGqmqlpGsYsZtatbtbtbtbtbtbtbswtctcswtdteswtfsAtJHqevIGHaZKfGKIpqpqfMfMsDututgogosEfpfpfpfpfpfpfpfpeUgxgxgxgxgxpZpvoYtxeOpxtytztAtBtCtDqctEoYefsXoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapdpGpGqkqkqktGqmtatbtbtbtbtbtbtHswswswswteteswtIupuSKIrwUpRJfQrvKIpqpqfMfMfMgogogogosEfpfpfpfpfpfpfpfpeUgxgxgxgxgxpZucoYudqcueqeqcufuguhuiujukoYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGpGulpGumpGqmtatbtbtbtbtbtbtbswununswteteswuouTEAHqSbUpeVrxryKIpqpqfMfMsDuuuugogosEfpfpfpfpfpfpfpfpeUgxgxgxgxgxpZpvoYuEqcuFuGpzpzpBuHuIuJuKuLuMuNuOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGqkqkqkqkpGqmtatbtbtbtbtbtbtbswuPuPuQteteswuREBECKISWUpPjrzrArBpqpqprprpnpnpnpspnpnfpfpfpfpfpfpfppopptRgxgxgxpZpZpvoYviqctDvjqcqcqgvktDvlvloYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapdpdpdvmpGpGsvsvtbtbtbtbtbtbtbtbswvnvovpvqvrvsvtvuvvHqrCrDrDsfLLKIpqpqprprprpnpspspspsfpfpfpfpfpfpfppopptRtRtRtRfHvFvGoYoYoYoYvHvIvJvKvLoYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPpdqkpGpGvMtbtbtbtbvMtbtbtbtbswvNePvPePvQvRvSuPvvKIsgshsismvTvTptptprprprpnpspspspnpppppppppppVppppppppppppppfHwnwowowowowowowowowowooYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPpdegegegpdegegegegpdegegegegswswswswswswswswswswswvTvTvTvTvTuquququrururprpspspstosCsFsGsHsIpVsJsKpppopopopofHwPwowQwRwSwTwUwVwWwXwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPacacacacBKsjpWpWpWpWpXpXvTsnsnsouquququrururpnpspspstopspVpVpVpVpVpVpVpVpopopopofHxrwoxswVwVxtwVwVwVwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPacacacacBKpWpWpWpWpWpXpXvTsnsnsouquququrururpnpspspspspspVpVpVpYpYsLpYwowowowowowoxJwoxKwVwVxLxMxMxNwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaPaPkIaPaPaPaPaPaPaPaPaPacacacacBKpWpWpWpWpWpXpXvTsnsnsouquququrururpnpspspstosMsNsNsOtgthtitjwoyhyhyieTyjykylymynynyoypyqyryswYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaPaPaPaPaPaPaPaPaPaPaPaPacacacacBKpWpWpWpWpWpXpXvTsosovTvTvTvTpnpnpnpnpspspspnpnppppppqHqHqHqHwoyhyhyKyKyLyMyNyOyOyOyPyQyRySwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaPaPaPaPaPaPacaPkIaPaPaPaPacacacacBKpWpWpWpWpWpXpXvTpXpXpXvTtktltmtntntopspspstotntptqtrtszawyzawowowowowowozbwowVwVwVxNzczcxNwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPacacaPaPaPaPaPacacacacBKpWpWxHxHpWpXpXpXpXpXpXvTttpXpXqItutvqIqIqItvtwqIqIqItKzawyzzehzBzCeizDzEzFwozGzHzIzJzKwVwVHUwYaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaPacaPaPaPaPaPaPacacacacBKBKBKBKBKpWpXpXvTpXpXpXvTtLtMtNqIqIqIqIqIqIqIqIqItOtPtQzawyzazZzZzZzZzZzZzZwowowowowowowowowowoaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaPaPaPaPaPaPaPaPacacacacacacacacBKBKBKBKBKqIqIqIzatSqIqIqItTtvqJqJqJtUtVqJqJqItKzawywyxHxHxHxHacacacacacacacacacacacacacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaPaPaPaPaPaPacacacacacacacacBKpWpWpWBKqIqIqIzatStStStWtXtvqJqJqJtUtYtZuaubtSzawywytRxHxHxHacacacacacacacacacacacacacacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaPaPaPaPaPaPacacacacacacacacBKpWpWpWpWqLqLqLqMqMqMqMqMqMqMqJqJqJqKqKqKqKzazazawywytRtRxHxHaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaPaPaPaPaPacacacacacacacacyBqNqOqOqOqNqLqLqLqMqLqLqLqMfOfOqJqJqJqJqJqJqJpWzawywywytRtRxHxHaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababaaaaaaaaacacacacacacacacyBqNqNqNqNqNqLqLqLqMqLqLqLqMfOfOqJqJqJqJqJqJqJpWzawywywytRxHxHxHaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaacacacyBqNqOqOqOqNqLqLqLqLqLqLqLqLqLqLpWpWpWqIfJrtruqIzawywywywywywywyaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaacacacyBqNqOqOqOqOqLqLqLqLqLqLqLqLqLqLpWpWpWqIqPqPqPqPrszuzuzuzuzuzuwyaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaacacacyBqNqOqOqOqNqLqLqLqLqLqLqLqLqLqLpWpWpWqIqPqPqPqPrszuzuzuzuzuzuzuaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaaaaaaaaaaaaaaaaaaaaaayBqNqNqNqNqNqLqLqLqMqMqMqLqMqMqMBKpWBKzarsrsrsrsrsrsrsrszuzuzuzuaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaaaaaaaaaaaaaaaaaaaaaayBqNqOqOqOqNqLqLqLqMqLqLqLqLqMqLpWpWpWqIrsqPqPrsqPrsqPrszuzuzuzuaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaaaaaaaaaaaaaaaaaaaaxHBKpWpWpWpWqLqLqLqMqLqLqLqLqMqLpWpWpWqIrsqPqPrsqPrsqPrszuzuzuwyaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaaaaaaaaaaaaaaaaaaaaxHBKpWpWpWBKqLqLqLqMqLqLqLqLqLqLpWpWpWqIzaqIzazaqIqIqIzawywywywyaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaaaaaaaaaaaaaaaaaaaaaaBKBKBKBKBKBKBKBKBKpWpWpWpWBKpWpWpWpWpWBKpWpWpWpWpWpWBKxHacacaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaPaPaPBKpWpWpWpWBKpWpWpWpWpWpWpWpWpWpWpWpWBKxHacacacacacacaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaPaPaPaPBKBKBKBKBKBKpWpWpWskskslslslslslslslslaaaaaaaaaaaaacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaPaPaPaPaPBKpWskskskskslaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaslskskskskskslaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaslslslslslslslaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMaaaaFZDAXMataPaPaPaPkJoaoGoHoIoJoKoLkJoMoMoMoMoMoMoMoMohoioNhroOoPmSoQjjjjjLoRoSkjoToUoVsEsEsEsEsEsEsEsEsEsEsEsEsEsEsEsEeXoYoYoYoYoZpapbpcoZoYoYoYoYpSpSacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMaaaaatatLnatpdpdpdpdkJkJkJkJkJkJkJkJkJoMoMoMoMoMoMoMoMpeoipfhrmppgphpipjkjkjkjkjkjpkplpmsEgxgxgxgxgxgxgxgxgxgxgxgxgxgxsEpvoYpwpwpxpypzpApBpCpDpEpEoYacacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaeMeMeMdXpGpGpGpGpGpGpGpGpGpGpGpGpHpIpJkfpKpKpKpKpKpKpKpKpLpKpMhrhrhrhrpNkjpOpPeJeNpOpTlKpUsEgxgxgxgxgxgxgxgxoXoXoXoXoXoXeUqaoYerqcqdqeqcqfqgqhqiqcetoYacacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGqkqkpGpGpGqkpGpGqkqkqlqmpGpGqnqoqpqpqpqpqpqpUUqrqsqtquqvqwqxqyqzqAqBpQpRqCqFqGpUsEgxgxgxgxgxgxgxgxoXoXoXoXoXoXeUpvoYoYoYoYqQqRqSqTqUoYoYoYoYacacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapdpGpGqkqVqWqkqkpGpGqXqYedAOrbrcrdrerererereeurergrhrirjrkrkrlVwrmrkrnroqDqErpnPrrpUsEgxgxgxgxgxgxgxgxoXoXoXoXoXoXeUrEoYrFrGpxrHpzrIrJrKrLrMrNoYacaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGpGqkqmqkqkpGpGpGpGpGpGpGpGpGqnrOrPrQrPrPrPrSrTrUrVrWrXrYQFXqrZsasbrPrPrPrqscscseoWsEsEsEsEsEsEsEsEeUoXoXoXoXoXeUpvoYerqcspqeqcqfqgsqsrqcqcoYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGsspGqlqkststsusvsvsvsvsvsvsvswswswswswswsxexsdszKIKIKIKIVATOdAsBsBussDsDtRsEgooWoWehfpfpfOehfpfpsneUoXoXoXoXoXeUpvoYoYoYoYsPqcsQsRsSsTqcsUeesWsXoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGpGqmqlpGsYsZtatbtbtbtbtbtbtbswtctcswtdteswtfsAtJHqevIGHaZKfGKIuvpquwsDyxututgogosEehfpfpfOehfpfpuxeUoXoXoXoXoXeUpvoYtxeOpxtytztAtBtCtDqctEoYefsXoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapdpGpGqkqkqktGqmtatbtbtbtbtbtbtHswswswswteteswtIupuSKIrwUpRJfQrvKIuypqfMfMyygogogogosEehfpfpfOehfpfpuzeUoXoXoXoXoXeUucoYudqcueqeqcufuguhuiujukoYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGpGulpGumpGqmtatbtbtbtbtbtbtbswununswteteswuouTEAHqSbUpeVrxryKIuApqfMsDyzuuuugogosEehfpfpfOehfpfpuBeUoXoXoXoXoXeUpvoYuEqcuFuGpzpzpBuHuIuJuKuLuMuNuOaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadXpGqkqkqkqkpGqmtatbtbtbtbtbtbtbswuPuPuQteteswuREBECKISWUpPjrzrArBuCpquDpnpnpnpnpspnpnfpfpfpfpfpfpfpuUppyCoXoXoXpZpZyDoYviqctDvjqcqcqgvktDvlvloYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaapdpdpdvmpGpGsvsvtbtbtbtbtbtbtbtbswvnvovpvqvrvsvtvuvvHqrCrDrDsfLLKIuCpqprpruVpnpspspspsfpfpuWuXuYfpuZvappyCyCyCyCfHvFvGoYoYoYoYvHvIvJvKvLoYoYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPpdqkpGpGvMtbtbtbtbvMtbtbtbtbswvNePvPePvQvRvSuPvvKIsgshsismvTvTvbptprprprpnpspspspnpppppppppppVppppppppppppppfHwnwowowowowowowowowowooYoYoYaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPpdegegegpdegegegegpdegegegegswswswswswswswswswswswvTvTvTvTvTvcuququrvdurprpspspstosCsFsGsHsIpVsJsKppvevfvgvhfHwPwowQwRwSwTwUwVwWwXwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPacacacacBKsjpWvwvxruvzvAvTvBvCsovDuquqvEvUvVtopspspstopspVpVpVpVpVpVpVpVpopopovWfHxrwoxswVwVxtwVwVwVwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPacacacBKpWpWpWpWpWpXpXvTvXvYsovZuquqwawbwctopspspspspspVpVpVpYpYsLpYwowowowowowoxJwoxKwVwVxLxMxMxNwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaPaPkIaPaPaPaPaPaPaPaPaPaPacacacBKwdpWpWwewfpXwgvTvYwhsowiuquqururwjpnpspspstosMsNsNsOtgthtitjwoyhyhyieTyjykylymynynyoypyqyryswYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacacaPaPaPaPaPaPaPaPaPaPaPaPaPaPacacBKwkpWpWwlwmpXwgvTsosovTvTvTvTpnpnpnpnpspsyEpnpnppppppqHqHqHqHwoyhyhyKyKyLyMyNyOyOyOyPyQyRySwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacaPaPaPaPaPaPacaPkIaPaPaPaPaPaPacacBKwqpWwrwrpWpXpXvTpXpXyFvTtktltmtntntopspspstotntptqtrtszawtwtwowowowowowozbwowVwVwVxNzczcxNwVwYaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPacacaPaPaPaPaPaPaPaPacBKwuwvwwpWpWpXpXpXpXpXwsvTttpXpXqItutvqIqIqItvtwqIqIqItKzawtwxwzzBzCeizDzEzFwozGzHzIzJzKwVwVHUwYaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaPacaPaPaPaPaPaPaPaPaPaPBKBKBKBKBKwAvywCvTpXpXpXvTtLtMtNqIqIqIqIqIqIqIqIqItOtPtQzawtzazZzZzZzZzZzZzZwowowowowowowowowowoacaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPBKBKBKBKBKqIqIqIzatSqIqIqItTtvqJqJqJtUtVqJqJqItKzawtzaacacacacacacacacacacacacacacacacacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaPaPaPaPaPaPaPaPaPaPaPaPaPaPwDxnxpxqwDqIqIqIzatStStStWtXtvqJqJqJtUtYtZuaubtSzawtzayvacacacacacacacacacacacacacacacacacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaPaPaPaPaPaPaPaPaPaPaPaPaPaPwDxupWpWpWqLqLqLqMqMqMqMqMqMqMqJqJqJqKqKqKqKzazazawtzayvyvacacacacacacacacacacacacacacacacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaPaPaPaPaPaPaPaPaPaPkIaPaPwEwFxwxCxDwFqLqLqLwBwGxexfqMwHqLqJqJqJqJwIwJwKwLzawtwtzayvyvacacacacacacacacacacacacacacacacacacaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababaaaaaaaaaPaPaPaPaPaPaPaPwEqNqNqNqNqNyGqLqLxgwGxhxhqMwHqLqJqJqJqJqJqJqJpWzawtwtzayvacacacacacacacacacacacacacacacacacacaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaPaPaPwEwFxExFxGwFqLqLqLqLqLqLqLqLwMwMpWpWpWqIfJrtxiqIwtwtwtzawywywywyacacacacacacacacacacacacacacaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaxHaPaPwEwFxIqOqOqOqLqLqLqLqLqLqLqLqLqLpWpWpWqIqPqPqPqPrsrsrsrsywywywwyacacacacacacacacacacacacacaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaxHxHaPwEwFxwxCxDwFqLqLqLqLqLqLqLqLyIqLpWpWpWqIwNwOwZxarsywywywywywywywacacacacacacacacacacacaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaaaaaaaaaaaaaaaaaaaaaayBqNqNqNqNqNyGqLqLqMxbxbqLxbqMxbwDpWwDtvrsrsrsrsrsrsrsrsywywywywacacacacacacacacacaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababababaaaaaaaaaaaaaaaaaaaaaayBwFxExFxGwFqLqLqLxbxOxPqLxQqMxjpWpWpWxkrsxlqPrsxRrsxSrsywywywywacacacacacacacaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaaaaaaaaaaaaaaaaaaaaxHwDxupWpWpWqLqLqLxbxTqLqLxUxbxjpWpWpWxmrsqPqPrsqPrsxVrsywywywwyacacacacaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaaaaaaaaaaaaaaaaaaaaxHwDxWxYxZwDqLqLxcqMyaqLqLqLqLqLpWpWpWxmzaqIzazaqIybqIzawywywywyaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababababababaaaaaaaaaaaaaaaaaaaaaaBKBKBKBKBKBKBKBKBKycpWpWpWwDxopWpWpWxpBKpWydydpWpWyeBKaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaPaPaPaPaPaPBKyfxWygpWBKxvpWpWpWpWpWpWpWpWpWpWyeBKxHaPaPaPaPaPaPaPaPaPaPaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababaPaPaPaPBKxoyupWpWBKxxxypWskxzslslxdxdxdxdslslaaaaaaaaaaaaaPaPaPaPaPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaBKBKwDwDBKBKxAskskskxzslaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaslxBskskskxzslaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaababababaaaaaaaaaaaaslslxdxdxdslslaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa

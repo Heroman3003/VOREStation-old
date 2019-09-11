@@ -135,7 +135,7 @@
 /obj/machinery/vending/blood
 	name = "Blood-Onator"
 	desc = "Freezer-vendor for storage and quick dispensing of blood packs"
-	product_ads = "The true life juice!;Vampire's choice!;Home-grown blood only!;Donate today, be saved tomorrow!;Ping!"
+	product_ads = "The true life juice!;Vampire's choice!;Home-grown blood only!;Donate today, be saved tomorrow!;Approved by Zeng-Hu Pharmaceuticals Incorporated!; Curse you, Vey-Med artificial blood!"
 	icon_state = "blood"
 	idle_power_usage = 211
 	req_access = list(access_medical)

@@ -1,4 +1,4 @@
-var/datum/planet/virgo3b/planet_virgo3b = null
+var/datum/planet/virgo5/planet_virgo5 = null
 
 /datum/time/virgo5
 	seconds_in_day = 4.5 HOURS

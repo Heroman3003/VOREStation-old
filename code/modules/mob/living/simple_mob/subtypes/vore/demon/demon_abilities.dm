@@ -1,4 +1,8 @@
-/mob/living/simple_mob/vore/slaughter_demon/verb/blood_crawl()
+/mob/living/simple_mob/vore/demon/verb/blood_crawl()
+	set name = "Bloodcrawl"
+	set desc = "Shift out of reality using blood as your gateway"
+	set category = "Abilities"
+
 	var/turf/T = get_turf(src)
 	if(!T.CanPass(src,T) || loc != T)
 		to_chat(src,"<span class='warning'>You can't use that here!</span>")
@@ -22,6 +26,7 @@
 		pulledby.stop_pulling()
 	stop_pulling()
 	canmove = FALSE
+	is_shifting = TRUE
 
 	//Shifting in
 	if(shifted_out)
@@ -40,9 +45,10 @@
 		force_max_speed = initial(force_max_speed)
 
 		//Cosmetics mostly
-		flick("phase_shift2",src)
+		flick("phasein",src)
 		custom_emote(1,"phases in!")
-		sleep(5) //The duration of the TP animation
+		sleep(30) //The duration of the TP animation
+		is_shifting = FALSE
 		canmove = original_canmove
 
 		//Potential phase-in vore
@@ -88,19 +94,25 @@
 			B.escapable = FALSE
 
 		overlays.Cut()
-		flick("phase_shift",src)
-		sleep(5)
+		flick("phaseout",src)
+		sleep(30)
 		invisibility = INVISIBILITY_LEVEL_TWO
 		see_invisible = INVISIBILITY_LEVEL_TWO
 		update_icon()
 		alpha = 127
 
+		is_shifting = FALSE
 		canmove = original_canmove
 		incorporeal_move = TRUE
 		density = FALSE
 		force_max_speed = TRUE
 
-/mob/living/simple_mob/vore/slaughter_demon/verb/phase_shift()
+/mob/living/simple_mob/vore/demon/verb/phase_shift()
+	set name = "Phase Shift"
+	set desc = "Shift out of reality temporarily"
+	set category = "Abilities"
+
+
 	var/turf/T = get_turf(src)
 
 	if(shift_state && shift_state == AB_SHIFT_PASSIVE)
@@ -126,6 +138,7 @@
 		pulledby.stop_pulling()
 	stop_pulling()
 	canmove = FALSE
+	is_shifting = TRUE
 
 	shifted_out = TRUE
 	custom_emote(1,"phases out!")
@@ -137,13 +150,14 @@
 		B.escapable = FALSE
 
 	overlays.Cut()
-	flick("phase_shift",src)
-	sleep(5)
+	flick("phaseout",src)
+	sleep(30)
 	invisibility = INVISIBILITY_LEVEL_TWO
 	see_invisible = INVISIBILITY_LEVEL_TWO
 	update_icon()
 	alpha = 127
 
+	is_shifting = FALSE
 	canmove = original_canmove
 	incorporeal_move = TRUE
 	density = FALSE
@@ -163,11 +177,15 @@
 		incorporeal_move = initial(incorporeal_move)
 		density = initial(density)
 		force_max_speed = initial(force_max_speed)
+		original_canmove = canmove
+		canmove = FALSE
+		is_shifting = TRUE
 
 		//Cosmetics mostly
-		flick("phase_shift2",src)
+		flick("phasein",src)
 		custom_emote(1,"phases in!")
-		sleep(5) //The duration of the TP animation
+		sleep(30) //The duration of the TP animation
+		is_shifting = FALSE
 		canmove = original_canmove
 
 		var/turf/NT = get_turf(src)

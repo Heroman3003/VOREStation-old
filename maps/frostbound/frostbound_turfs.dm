@@ -1,0 +1,1 @@
+VIRGO5_TURF_CREATE(/turf/simulated/floor/outdoors/snow)

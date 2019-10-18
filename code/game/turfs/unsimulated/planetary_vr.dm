@@ -31,7 +31,6 @@
 	alpha = 0xFF
 	VIRGO3B_SET_ATMOS
 
-
 //Virgo 5
 
 //Atmosphere properties

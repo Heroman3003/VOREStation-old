@@ -118,7 +118,6 @@
 		Z_LEVEL_SATELLITE,
 		Z_LEVEL_UNDERGROUND_MINE,
 		Z_LEVEL_CENTRAL,
-		Z_LEVEL_CENTCOM,
 		Z_LEVEL_MISC,
 		Z_LEVEL_SHIPS,
 		Z_LEVEL_ASTEROID_MINE
@@ -135,7 +134,8 @@
 
 /datum/planet/virgo5
 	expected_z_levels = list(
-		Z_LEVEL_STATION_FOUR
+		Z_LEVEL_STATION_FOUR,
+		Z_LEVEL_CENTRAL
 	)
 
 /datum/map/frostbound/get_map_levels(var/srcz, var/long_range = TRUE)

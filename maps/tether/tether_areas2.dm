@@ -364,9 +364,6 @@
 /area/rnd/xenoarch_storage
 	name = "\improper Xenoarch Storage"
 	icon_state = "research"
-/area/rnd/chemistry_lab
-	name = "\improper Research Chemistry Lab"
-	icon_state = "research"
 /area/rnd/miscellaneous_lab
 	name = "\improper Research Miscellaneous Lab"
 	icon_state = "research"

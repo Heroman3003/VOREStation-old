@@ -388,6 +388,24 @@
 /obj/structure/cable/heavyduty,
 /turf/simulated/floor/virgo3b_indoors,
 /area/tether/outpost/solars_shed)
+"aP" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	dir = 4
+	},
+/obj/machinery/vending/wallmed_airlock{
+	pixel_x = 28
+	},
+/turf/simulated/floor/tiled,
+/area/rnd/outpost)
+"aQ" = (
+/obj/machinery/vending/wallmed2{
+	pixel_x = -28
+	},
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/breakroom)
 "aR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/solar_control,
@@ -7160,14 +7178,18 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "mV" = (
-/obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/machinery/light{
+	dir = 8
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -28
+	},
+/obj/structure/table/standard,
+/obj/item/weapon/storage/firstaid/regular,
+/obj/item/bodybag/cryobag,
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/anomaly_lab)
+/area/rnd/outpost/breakroom)
 "mW" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -7231,11 +7253,10 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "nf" = (
-/obj/structure/table/standard,
-/obj/item/weapon/storage/box/beakers,
 /obj/structure/window/reinforced{
 	dir = 4
 	},
+/obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "ng" = (
@@ -7252,8 +7273,13 @@
 /area/rnd/outpost/anomaly_lab)
 "ni" = (
 /obj/structure/table/standard,
-/obj/machinery/chemical_dispenser/full,
 /obj/machinery/light,
+/obj/structure/reagent_dispensers/acid{
+	pixel_y = -32
+	},
+/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper,
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "nj" = (
@@ -7753,14 +7779,13 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "of" = (
-/obj/effect/floor_decal/borderfloor{
+/obj/structure/table/standard,
+/obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/effect/floor_decal/corner/purple/border{
-	dir = 4
-	},
+/obj/machinery/reagentgrinder,
 /turf/simulated/floor/tiled,
-/area/rnd/outpost)
+/area/rnd/outpost/anomaly_lab)
 "og" = (
 /obj/structure/dispenser/oxygen,
 /turf/simulated/floor/tiled,
@@ -7977,11 +8002,6 @@
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/breakroom)
-"oH" = (
-/obj/structure/table/woodentable,
-/obj/machinery/microwave,
-/turf/simulated/floor/tiled,
-/area/rnd/outpost/breakroom)
 "oI" = (
 /obj/structure/table/woodentable,
 /obj/machinery/microwave,
@@ -8110,18 +8130,6 @@
 "oZ" = (
 /obj/structure/sign/science,
 /turf/simulated/wall,
-/area/rnd/outpost/breakroom)
-"pa" = (
-/obj/structure/table/woodentable,
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -28
-	},
-/obj/item/weapon/storage/box/donkpockets,
-/turf/simulated/floor/tiled,
 /area/rnd/outpost/breakroom)
 "pb" = (
 /obj/machinery/alarm{
@@ -22637,8 +22645,8 @@ lH
 jE
 mm
 mG
-mV
 nf
+of
 jx
 ab
 ab
@@ -24602,7 +24610,7 @@ dD
 ch
 lS
 oc
-of
+aP
 fd
 fy
 fQ
@@ -24621,8 +24629,8 @@ lc
 oZ
 oI
 ow
-oH
-pa
+aQ
+mV
 oG
 oP
 oX

@@ -619,6 +619,11 @@
 			I.forceMove(vore_selected)
 			updateVRPanel()
 			return
+		if(istype(I,/obj/item/clothing))
+			var/obj/item/clothing = I
+			if(!(I.clothing_edibility_check()))
+				to_chat(src, "<span class='warning'>You really should not be eating this.</span>")
+				return
 		if(istype(I,/obj/item/clothing/shoes))
 			var/obj/item/clothing/shoes/S = I
 			if(S.holding)

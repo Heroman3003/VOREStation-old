@@ -181,3 +181,7 @@
 		SPECIES_TESHARI = 'icons/mob/species/seromi/head.dmi',
 		SPECIES_VOX = 'icons/mob/species/vox/head.dmi',
 		SPECIES_WEREBEAST = 'icons/mob/species/werebeast/head.dmi')
+
+
+
+/obj/item/clothing/proc/clothing_edibility_check()

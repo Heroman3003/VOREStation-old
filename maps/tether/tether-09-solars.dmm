@@ -334,10 +334,17 @@
 /turf/simulated/floor/virgo3b,
 /area/tether/outpost/solars_outside)
 "aK" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "2-8"
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/heavyduty{
+	icon_state = "0-8"
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/sensor{
+	name = "Powernet Sensor - Solar Farm Output";
+	name_tag = "Solar Farm Output"
+	},
 /turf/simulated/floor/virgo3b,
 /area/tether/outpost/solars_outside)
 "aL" = (
@@ -382,29 +389,23 @@
 /turf/simulated/floor/virgo3b_indoors,
 /area/tether/outpost/solars_shed)
 "aP" = (
-/obj/structure/cable/yellow{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/landmark{
+	name = "bluespacerift"
 	},
-/obj/machinery/power/sensor{
-	name = "Powernet Sensor - Solar Farm Input";
-	name_tag = "Solar Farm Input"
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/virgo3b,
+/turf/simulated/floor/outdoors/dirt/virgo3b,
 /area/tether/outpost/solars_outside)
 "aQ" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
 	},
-/obj/machinery/power/sensor{
-	name = "Powernet Sensor - Solar Farm Output";
-	name_tag = "Solar Farm Output"
+/obj/effect/floor_decal/corner/purple/border{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/simulated/floor/virgo3b,
-/area/tether/outpost/solars_outside)
+/obj/machinery/vending/wallmed_airlock{
+	pixel_x = 30
+	},
+/turf/simulated/floor/tiled,
+/area/rnd/outpost)
 "aR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/power/solar_control,
@@ -513,6 +514,14 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cable/yellow{
+	d2 = 2;
+	icon_state = "0-2"
+	},
+/obj/machinery/power/sensor{
+	name = "Powernet Sensor - Solar Farm Input";
+	name_tag = "Solar Farm Input"
+	},
 /turf/simulated/floor/virgo3b,
 /area/tether/outpost/solars_outside)
 "bd" = (
@@ -2132,16 +2141,17 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "eA" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
+/obj/effect/floor_decal/steeldecal/steel_decals4{
+	dir = 9
 	},
-/obj/effect/floor_decal/steeldecal/steel_decals6{
-	dir = 1
+/obj/effect/floor_decal/steeldecal/steel_decals4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost)
+/area/rnd/outpost/xenoarch_storage)
 "eB" = (
 /obj/effect/floor_decal/industrial/warning/dust{
 	dir = 1
@@ -2552,20 +2562,10 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost)
 "fc" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals4{
-	dir = 9
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals4{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 6
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "fd" = (
@@ -5248,15 +5248,13 @@
 /turf/simulated/floor,
 /area/rnd/outpost/storage)
 "jM" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "jN" = (
@@ -5826,13 +5824,17 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost)
 "kP" = (
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 4;
-	icon_state = "1-4"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
+	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "kQ" = (
@@ -6113,19 +6115,29 @@
 /area/rnd/outpost/xenoarch_storage)
 "ll" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 6
+	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 6
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "lm" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
+	dir = 9
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
+	dir = 9
+	},
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 8;
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
@@ -6140,14 +6152,21 @@
 /turf/simulated/floor,
 /area/maintenance/substation/outpost)
 "lo" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 9
+/obj/effect/floor_decal/steeldecal/steel_decals6{
+	dir = 1
+	},
+/obj/structure/cable/green{
+	d1 = 2;
+	d2 = 4;
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/xenoarch_storage)
+/area/rnd/outpost)
 "lp" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /turf/simulated/floor/tiled/dark,
@@ -6480,6 +6499,11 @@
 	dir = 8;
 	icon_state = "tube1"
 	},
+/obj/structure/extinguisher_cabinet{
+	dir = 4;
+	icon_state = "extinguisher_closed";
+	pixel_x = -30
+	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "lN" = (
@@ -6527,19 +6551,6 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/xenoarch_storage)
 "lR" = (
-/obj/machinery/door/airlock/glass_science{
-	name = "Xenoarch Storage"
-	},
-/obj/machinery/door/firedoor/border_only,
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/rnd/outpost/xenoarch_storage)
-"lS" = (
 /obj/effect/floor_decal/steeldecal/steel_decals6{
 	dir = 4
 	},
@@ -6549,6 +6560,37 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/rnd/outpost)
+"lS" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/purple/border{
+	dir = 5
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/purple/bordercorner2{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost)
@@ -6737,9 +6779,14 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "mm" = (
-/obj/structure/table/standard,
+/obj/structure/table/woodentable,
+/obj/item/weapon/storage/box/donkpockets,
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -28
+	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/anomaly_lab)
+/area/rnd/outpost/breakroom)
 "mn" = (
 /obj/machinery/washing_machine,
 /obj/structure/window/reinforced{
@@ -6851,6 +6898,11 @@
 	dir = 4
 	},
 /obj/effect/floor_decal/industrial/warning,
+/obj/structure/extinguisher_cabinet{
+	dir = 4;
+	icon_state = "extinguisher_closed";
+	pixel_x = -30
+	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "my" = (
@@ -7082,8 +7134,26 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "mQ" = (
-/obj/machinery/light,
-/obj/machinery/artifact_scanpad,
+/obj/machinery/camera/network/research_outpost{
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
+	},
+/obj/structure/cable/green{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	cell_type = /obj/item/weapon/cell/super;
+	dir = 8;
+	name = "west bump";
+	pixel_x = -28
+	},
+/obj/structure/extinguisher_cabinet{
+	dir = 1;
+	icon_state = "extinguisher_closed";
+	pixel_y = -32
+	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "mR" = (
@@ -7113,14 +7183,10 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "mV" = (
-/obj/structure/table/standard,
-/obj/item/weapon/reagent_containers/glass/beaker/large,
-/obj/item/weapon/reagent_containers/dropper,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/rnd/outpost/anomaly_lab)
+/obj/effect/floor_decal/rust,
+/obj/structure/reagent_dispensers/coolanttank,
+/turf/simulated/floor/tiled/steel_dirty,
+/area/rnd/outpost/storage)
 "mW" = (
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
@@ -7184,13 +7250,12 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "nf" = (
-/obj/structure/table/standard,
-/obj/item/weapon/storage/box/beakers,
-/obj/structure/window/reinforced{
-	dir = 4
+/obj/structure/table/woodentable,
+/obj/machinery/vending/wallmed1{
+	pixel_x = -30
 	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/anomaly_lab)
+/area/rnd/outpost/breakroom)
 "ng" = (
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/effect/floor_decal/industrial/warning/corner{
@@ -7204,11 +7269,12 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "ni" = (
-/obj/structure/table/standard,
-/obj/machinery/chemical_dispenser/full,
-/obj/machinery/light,
+/obj/structure/table/woodentable,
+/obj/machinery/light{
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/anomaly_lab)
+/area/rnd/outpost/breakroom)
 "nj" = (
 /obj/structure/filingcabinet/chestdrawer,
 /obj/structure/window/reinforced{
@@ -7447,20 +7513,12 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
 "nE" = (
-/obj/machinery/camera/network/research_outpost{
-	dir = 4
-	},
-/obj/machinery/atmospherics/unary/vent_pump/on{
-	dir = 4
-	},
-/obj/structure/cable/green{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	cell_type = /obj/item/weapon/cell/super;
-	dir = 8;
-	name = "west bump";
-	pixel_x = -28
+/obj/machinery/light,
+/obj/machinery/artifact_scanpad,
+/obj/structure/extinguisher_cabinet{
+	dir = 1;
+	icon_state = "extinguisher_closed";
+	pixel_y = -32
 	},
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/anomaly_lab)
@@ -7696,35 +7754,30 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost)
 "oe" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 5
+/obj/machinery/door/airlock/glass_science{
+	name = "Xenoarch Storage"
 	},
-/obj/effect/floor_decal/corner/purple/border{
-	dir = 5
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/purple/bordercorner2{
-	dir = 4
-	},
+/obj/machinery/door/firedoor/border_only,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 4
 	},
+/obj/structure/cable/green{
+	d1 = 4;
+	d2 = 8;
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost)
+/area/rnd/outpost/xenoarch_storage)
 "of" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/purple/border{
-	dir = 4
+/obj/structure/table/standard,
+/obj/machinery/vending/wallmed1{
+	pixel_y = 30
 	},
 /turf/simulated/floor/tiled,
-/area/rnd/outpost)
+/area/rnd/outpost/anomaly_lab)
 "og" = (
 /obj/structure/dispenser/oxygen,
 /turf/simulated/floor/tiled,
@@ -7868,10 +7921,12 @@
 /turf/simulated/floor/wood,
 /area/rnd/outpost/breakroom)
 "ow" = (
-/obj/structure/table/woodentable,
-/obj/item/weapon/storage/box/donkpockets,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/watertank,
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/breakroom)
+/area/rnd/outpost/anomaly_lab)
 "ox" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
@@ -7942,10 +7997,13 @@
 /turf/simulated/floor/tiled,
 /area/rnd/outpost/breakroom)
 "oH" = (
-/obj/structure/table/woodentable,
-/obj/machinery/microwave,
+/obj/structure/table/standard,
+/obj/machinery/light,
+/obj/item/weapon/storage/box/beakers,
+/obj/item/weapon/reagent_containers/glass/beaker/large,
+/obj/item/weapon/reagent_containers/dropper,
 /turf/simulated/floor/tiled,
-/area/rnd/outpost/breakroom)
+/area/rnd/outpost/anomaly_lab)
 "oI" = (
 /obj/structure/table/woodentable,
 /obj/machinery/microwave,
@@ -8023,6 +8081,25 @@
 	},
 /turf/simulated/floor/wood,
 /area/rnd/outpost/breakroom)
+"oR" = (
+/obj/structure/extinguisher_cabinet{
+	dir = 1;
+	icon_state = "extinguisher_closed";
+	pixel_y = -32
+	},
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/anomaly_lab)
+"oS" = (
+/obj/structure/table/standard,
+/obj/structure/window/reinforced{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/acid{
+	pixel_y = -32
+	},
+/obj/machinery/reagentgrinder,
+/turf/simulated/floor/tiled,
+/area/rnd/outpost/anomaly_lab)
 "oT" = (
 /obj/structure/bed/chair/wood{
 	dir = 8
@@ -8066,18 +8143,6 @@
 "oZ" = (
 /obj/structure/sign/science,
 /turf/simulated/wall,
-/area/rnd/outpost/breakroom)
-"pa" = (
-/obj/structure/table/woodentable,
-/obj/machinery/light{
-	dir = 8
-	},
-/obj/machinery/light_switch{
-	dir = 4;
-	pixel_x = -28
-	},
-/obj/item/weapon/storage/box/donkpockets,
-/turf/simulated/floor/tiled,
 /area/rnd/outpost/breakroom)
 "pb" = (
 /obj/machinery/alarm{
@@ -18807,7 +18872,7 @@ ad
 ad
 at
 aI
-aP
+aW
 aW
 bc
 bf
@@ -20511,7 +20576,7 @@ ad
 ad
 ad
 aK
-aQ
+aX
 aX
 bl
 bn
@@ -21742,7 +21807,7 @@ jw
 nD
 nM
 kZ
-mQ
+nE
 jx
 ab
 ab
@@ -21879,7 +21944,7 @@ kx
 lA
 ka
 ol
-nE
+mQ
 jx
 no
 mD
@@ -22452,7 +22517,7 @@ jE
 ml
 mG
 mU
-ni
+oH
 jx
 ab
 ab
@@ -22591,10 +22656,10 @@ ng
 nV
 lH
 jE
-mm
+of
 mG
-mV
-nf
+ow
+oS
 jx
 ab
 ab
@@ -23730,7 +23795,7 @@ ma
 nR
 mJ
 mW
-kZ
+oR
 jx
 ab
 ab
@@ -23963,7 +24028,7 @@ ad
 ad
 ad
 ad
-ad
+aP
 ad
 ad
 ad
@@ -24272,7 +24337,7 @@ cE
 db
 dC
 eb
-eA
+lo
 fv
 fv
 eY
@@ -24414,7 +24479,7 @@ cD
 da
 dB
 ea
-lS
+lR
 oi
 oi
 oj
@@ -24556,9 +24621,9 @@ cF
 dc
 dD
 ch
-oe
+lS
 oc
-of
+aQ
 fd
 fy
 fQ
@@ -24576,9 +24641,9 @@ ft
 lc
 oZ
 oI
-ow
-oH
-pa
+mm
+nf
+ni
 oG
 oP
 oX
@@ -24698,7 +24763,7 @@ ch
 ch
 ch
 ch
-lR
+oe
 eu
 dE
 dE
@@ -24839,8 +24904,8 @@ kr
 ez
 jt
 kK
-ll
-lo
+kP
+lm
 kr
 eD
 ff
@@ -24981,7 +25046,7 @@ kr
 eC
 mw
 mw
-lm
+ll
 me
 kr
 fe
@@ -25120,10 +25185,10 @@ ad
 ab
 ef
 kr
+eA
 fc
 jM
-kP
-lo
+lm
 mf
 kr
 fg
@@ -25286,7 +25351,7 @@ iU
 jf
 jo
 ji
-hM
+mV
 hM
 ov
 op

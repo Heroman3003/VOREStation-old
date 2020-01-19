@@ -1048,6 +1048,14 @@ default behaviour is:
 			else
 				to_chat(src, "<span class='warning'>You feel nauseous...</span>")
 
+				if(ishuman(src))
+					var/mob/living/carbon/human/Hu = src
+					if(CE_ANTACID in Hu.chem_effects)
+						if(prob(min(90, Hu.chem_effects[CE_ANTACID] * 15)))
+							spawn(rand(30 SECONDS, 2 MINUTES))
+								lastpuke = FALSE
+							return
+
 				spawn()
 					if(!skip_wait)
 						sleep(150)	//15 seconds until second warning
@@ -1104,10 +1112,11 @@ default behaviour is:
 					pixel_y = V.mob_offset_y
 		else if(buckled)
 			anchored = 1
-			canmove = 0
+			canmove = 1 //The line above already makes the chair not swooce away if the sitter presses a button. No need to incapacitate them as a criminally large amount of mechanics read this var as a type of stun.
 			if(istype(buckled))
 				if(buckled.buckle_lying != -1)
 					lying = buckled.buckle_lying
+					canmove = buckled.buckle_movable
 				if(buckled.buckle_movable)
 					anchored = 0
 					canmove = 1
@@ -1281,7 +1290,7 @@ default behaviour is:
 			var/turf/end_T = get_turf(target)
 			if(end_T)
 				add_attack_logs(src,M,"Thrown via grab to [end_T.x],[end_T.y],[end_T.z]")
-			src.drop_from_inventory(G)	//VOREStation Addition: grab exploit fix
+			src.drop_from_inventory(G)
 
 	src.drop_from_inventory(item)
 	if(!item || !isturf(item.loc))

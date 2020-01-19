@@ -257,6 +257,7 @@
 	pixel_y = 24
 	},
 /obj/structure/cable/green{
+	d2 = 2;
 	icon_state = "0-2"
 	},
 /obj/machinery/light_switch{
@@ -264,6 +265,7 @@
 	pixel_x = 12;
 	pixel_y = 24
 	},
+/obj/structure/closet/secure_closet/miner,
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/break_room)
 "aL" = (
@@ -425,14 +427,29 @@
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/break_room)
 "aZ" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/effect/floor_decal/borderfloor{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	dir = 1
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals7,
+/obj/effect/floor_decal/steeldecal/steel_decals7{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	dir = 9;
-	pixel_y = 0
+/obj/machinery/firealarm{
+	dir = 2;
+	layer = 3.3;
+	pixel_x = 0;
+	pixel_y = 26
 	},
-/turf/simulated/floor/tiled/steel_grid,
+/obj/structure/cable/green{
+	d1 = 1;
+	d2 = 2;
+	icon_state = "1-2"
+	},
+/obj/structure/closet/secure_closet/miner,
+/turf/simulated/floor/tiled,
 /area/outpost/mining_main/break_room)
 "ba" = (
 /obj/machinery/atmospherics/pipe/simple/visible/yellow{
@@ -492,31 +509,17 @@
 /turf/simulated/floor/plating,
 /area/outpost/mining_main/maintenance)
 "bg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 9;
+	pixel_y = 0
+	},
 /obj/structure/bed/chair{
-	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor{
 	dir = 1
 	},
-/obj/effect/floor_decal/corner/brown/border{
-	dir = 1
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals7,
-/obj/effect/floor_decal/steeldecal/steel_decals7{
-	dir = 4
-	},
-/obj/machinery/firealarm{
-	dir = 2;
-	layer = 3.3;
-	pixel_x = 0;
-	pixel_y = 26
-	},
-/obj/structure/cable/green{
-	d1 = 1;
-	d2 = 2;
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/steel_grid,
 /area/outpost/mining_main/break_room)
 "bh" = (
 /obj/structure/table/glass,
@@ -550,6 +553,9 @@
 	pixel_y = 3
 	},
 /obj/item/weapon/storage/box/donkpockets,
+/obj/machinery/vending/wallmed1{
+	pixel_y = -30
+	},
 /turf/simulated/floor/tiled,
 /area/outpost/mining_main/break_room)
 "bj" = (
@@ -777,6 +783,45 @@
 	},
 /turf/simulated/floor/bluegrid,
 /area/outpost/mining_main/airlock)
+"bK" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	dir = 4
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals7{
+	dir = 9
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals7{
+	dir = 10
+	},
+/obj/machinery/vending/wallmed_airlock{
+	pixel_x = 30
+	},
+/turf/simulated/floor/tiled,
+/area/outpost/mining_main/break_room)
+"bL" = (
+/obj/effect/floor_decal/borderfloor{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner/brown/border{
+	dir = 4
+	},
+/obj/effect/floor_decal/borderfloor/corner2{
+	dir = 5
+	},
+/obj/effect/floor_decal/corner/brown/bordercorner2{
+	dir = 5
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals7{
+	dir = 9
+	},
+/obj/effect/floor_decal/steeldecal/steel_decals7{
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/outpost/mining_main/break_room)
 "bW" = (
 /obj/effect/floor_decal/borderfloor,
 /obj/effect/floor_decal/corner/brown/border,
@@ -1320,44 +1365,6 @@
 	},
 /turf/simulated/floor/wood,
 /area/outpost/mining_main/dorms)
-"WV" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/brown/border{
-	dir = 4
-	},
-/obj/effect/floor_decal/borderfloor/corner2{
-	dir = 5
-	},
-/obj/effect/floor_decal/corner/brown/bordercorner2{
-	dir = 5
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals7{
-	dir = 9
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals7{
-	dir = 10
-	},
-/obj/structure/closet/secure_closet/miner,
-/turf/simulated/floor/tiled,
-/area/outpost/mining_main/break_room)
-"YA" = (
-/obj/effect/floor_decal/borderfloor{
-	dir = 4
-	},
-/obj/effect/floor_decal/corner/brown/border{
-	dir = 4
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals7{
-	dir = 9
-	},
-/obj/effect/floor_decal/steeldecal/steel_decals7{
-	dir = 10
-	},
-/obj/structure/closet/secure_closet/miner,
-/turf/simulated/floor/tiled,
-/area/outpost/mining_main/break_room)
 "Zn" = (
 /obj/effect/floor_decal/borderfloorblack,
 /obj/effect/floor_decal/borderfloorblack{
@@ -4937,7 +4944,7 @@ at
 qx
 aC
 aE
-bg
+aZ
 bv
 ZV
 ty
@@ -5080,7 +5087,7 @@ ao
 ao
 VK
 aM
-aZ
+bg
 Uk
 Uk
 by
@@ -5223,8 +5230,8 @@ ab
 VK
 Uy
 hW
-YA
-WV
+bK
+bL
 by
 US
 az

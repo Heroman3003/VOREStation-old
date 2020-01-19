@@ -174,19 +174,6 @@
 	departure_message = "Attention. A unregistered vessel is now leaving Virgo-3B."
 	..()
 
-/datum/shuttle/ferry/multidock/specops/ert
-	name = "Special Operations"
-	location = 0
-	warmup_time = 10
-	area_offsite = /area/shuttle/specops/station	//centcom is the home station, the Exodus is offsite
-	area_station = /area/shuttle/specops/centcom
-	docking_controller_tag = "specops_shuttle_port"
-	docking_controller_tag_station = "specops_shuttle_port"
-	docking_controller_tag_offsite = "specops_shuttle_fore"
-	dock_target_station = "specops_centcom_dock"
-	dock_target_offsite = "specops_dock_airlock"
-
-
 //////////////////////////////////////////////////////////////
 // RogueMiner "Belter: Shuttle
 // TODO - Not implemented yet on new map
@@ -210,6 +197,7 @@
 
 //////////////////////////////////////////////////////////////
 // CC Lewdship shuttle
+/*
 /datum/shuttle/ferry/cruiser_shuttle
 	name = "Cruiser Shuttle"
 	location = 1
@@ -219,3 +207,4 @@
 	docking_controller_tag = "cruiser_shuttle"
 	dock_target_station = "d1a1_dock"
 	dock_target_offsite = "cruiser_shuttle_bay"
+*/

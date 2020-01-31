@@ -102,7 +102,7 @@
 	unit_test_exempt_from_atmos = list()		//FROSTBOUND-TO-DO
 
 	lateload_z_levels = list(
-		list("Frostbound - Misc","Frostbound - Ships","Frostbound - Asteroid Mine","Frostbound - Cavern"),
+		list("Frostbound - Misc","Frostbound - Ships","Frostbound - Cavern"),
 		list("Alien Ship - Z1 Ship"),
 		list("Desert Planet - Z1 Beach","Desert Planet - Z2 Cave"),
 		list("Remmi Aerostat - Z1 Aerostat","Remmi Aerostat - Z2 Surface"),

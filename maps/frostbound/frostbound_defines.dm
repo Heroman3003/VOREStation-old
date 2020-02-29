@@ -92,8 +92,8 @@
 	bot_patrolling = FALSE
 
 	allowed_spawns = list("Tram Station","Gateway","Cryogenic Storage","Cyborg Storage")
-	spawnpoint_died = /datum/spawnpoint/tram
-	spawnpoint_left = /datum/spawnpoint/tram
+	//spawnpoint_died = /datum/spawnpoint/tram
+	//spawnpoint_left = /datum/spawnpoint/tram
 	spawnpoint_stayed = /datum/spawnpoint/cryo
 
 	meteor_strike_areas = list()		//FROSTBOUND-TO-DO
@@ -163,9 +163,9 @@
 		return list(srcz) //prevents runtimes when using CMC. any Z-level not defined above will be 'isolated' and only show to GPSes/CMCs on that same Z (e.g. CentCom).
 
 #define FROSTBOUND_MAP_SIZE 200 // Width and height of compiled in tether z levels.
-#define FROSTBOUND_HOLOMAP_GUTTER 40 // 40px gutter between icons
-#define FROSTBOUND_HOLOMAP_MARGIN_X ((HOLOMAP_ICON_SIZE - (2*FROSTBOUND_MAP_SIZE) - TETHER_HOLOMAP_CENTER_GUTTER) / 2)
-#define FROSTBOUND_HOLOMAP_MARGIN_Y ((HOLOMAP_ICON_SIZE - (2*FROSTBOUND_MAP_SIZE) - FROSTBOUND_HOLOMAP_GUTTER) / 2)
+#define FROSTBOUND_HOLOMAP_CENTER_GUTTER 40 // 40px gutter between icons
+#define FROSTBOUND_HOLOMAP_MARGIN_X ((HOLOMAP_ICON_SIZE - (2*FROSTBOUND_MAP_SIZE) - FROSTBOUND_HOLOMAP_CENTER_GUTTER) / 2)
+#define FROSTBOUND_HOLOMAP_MARGIN_Y ((HOLOMAP_ICON_SIZE - (2*FROSTBOUND_MAP_SIZE) - FROSTBOUND_HOLOMAP_CENTER_GUTTER) / 2)
 
 /datum/map_z_level/frostbound/station
 	flags = MAP_LEVEL_STATION|MAP_LEVEL_CONTACT|MAP_LEVEL_PLAYER|MAP_LEVEL_CONSOLES|MAP_LEVEL_SEALED|MAP_LEVEL_XENOARCH_EXEMPT

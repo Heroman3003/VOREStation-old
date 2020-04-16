@@ -1,7 +1,7 @@
 /obj/item/clothing/glasses/omnihud
 	name = "\improper AR glasses"
-	desc = "The KHI-62 AR Glasses are a design from Kitsuhana Heavy Industries. These are a cheap export version \
-	for Nanotrasen. Probably not as complete as KHI could make them, but more readily available for NT."
+	desc = "The ARG-62 AR Glasses are capable of displaying information on individuals. \
+	Commonly used to allow non-augmented crew to interact with virtual interfaces."
 	origin_tech = list(TECH_MAGNET = 3, TECH_BIO = 3)
 	var/obj/item/clothing/glasses/hud/omni/hud = null
 	var/mode = "civ"
@@ -35,7 +35,7 @@
 
 /obj/item/clothing/glasses/omnihud/proc/flashed()
 	if(flash_prot && ishuman(loc))
-		loc << "<span class='warning'>Your [src.name] darken to try and protect your eyes!</span>"
+		to_chat(loc, "<span class='warning'>Your [src.name] darken to try and protect your eyes!</span>")
 
 /obj/item/clothing/glasses/omnihud/prescribe(var/mob/user)
 	prescription = !prescription
@@ -53,10 +53,10 @@
 
 	var/mob/living/carbon/human/H = user
 	if(!H.glasses || !(H.glasses == src))
-		user << "<span class='warning'>You must be wearing the [src] to see the display.</span>"
+		to_chat(user, "<span class='warning'>You must be wearing the [src] to see the display.</span>")
 	else
 		if(!ar_interact(H))
-			user << "<span class='warning'>The [src] does not have any kind of special display.</span>"
+			to_chat(user, "<span class='warning'>The [src] does not have any kind of special display.</span>")
 
 /obj/item/clothing/glasses/omnihud/proc/ar_interact(var/mob/living/carbon/human/user)
 	return 0 //The base models do nothing.
@@ -67,11 +67,11 @@
 
 /obj/item/clothing/glasses/omnihud/med
 	name = "\improper AR-M glasses"
-	desc = "The KHI-62-M AR glasses are a design from Kitsuhana Heavy Industries. \
+	desc = "The ARG-62-M AR Glasses are capable of displaying information on individuals. \
 	These have been upgraded with medical records access and virus database integration."
 	mode = "med"
 	action_button_name = "AR Console (Crew Monitor)"
-	arscreen_path = /datum/nano_module/crew_monitor
+	arscreen_path = /datum/nano_module/program/crew_monitor
 	enables_planes = list(VIS_CH_ID,VIS_CH_HEALTH_VR,VIS_CH_STATUS_R,VIS_CH_BACKUP,VIS_AUGMENTED)
 
 	ar_interact(var/mob/living/carbon/human/user)
@@ -81,7 +81,7 @@
 
 /obj/item/clothing/glasses/omnihud/sec
 	name = "\improper AR-S glasses"
-	desc = "The KHI-62-S AR glasses are a design from Kitsuhana Heavy Industries. \
+	desc = "The ARG-62-S AR Glasses are capable of displaying information on individuals. \
 	These have been upgraded with security records integration and flash protection."
 	mode = "sec"
 	flash_protection = FLASH_PROTECTION_MAJOR
@@ -96,7 +96,7 @@
 
 /obj/item/clothing/glasses/omnihud/eng
 	name = "\improper AR-E glasses"
-	desc = "The KHI-62-E AR glasses are a design from Kitsuhana Heavy Industries. \
+	desc = "The ARG-62-E AR Glasses are capable of displaying information on individuals. \
 	These have been upgraded with advanced electrochromic lenses to protect your eyes during welding."
 	mode = "eng"
 	flash_protection = FLASH_PROTECTION_MAJOR
@@ -110,7 +110,7 @@
 
 /obj/item/clothing/glasses/omnihud/rnd
 	name = "\improper AR-R glasses"
-	desc = "The KHI-62-R AR glasses are a design from Kitsuhana Heavy Industries. \
+	desc = "The ARG-62-R AR Glasses are capable of displaying information on individuals. \
 	These have been ... modified ... to fit into a different frame."
 	mode = "sci"
 	icon = 'icons/obj/clothing/glasses.dmi'
@@ -145,18 +145,18 @@
 			icon_state = off_state
 			item_state = "[initial(item_state)]-off"
 			usr.update_inv_glasses()
-			usr << "You deactivate the retinal projector on the [src]."
+			to_chat(usr, "You deactivate the retinal projector on the [src].")
 		else
 			active = 1
 			icon_state = initial(icon_state)
 			item_state = initial(item_state)
 			usr.update_inv_glasses()
-			usr << "You activate the retinal projector on the [src]."
+			to_chat(usr, "You activate the retinal projector on the [src].")
 		usr.update_action_buttons()
 
 /obj/item/clothing/glasses/omnihud/all
 	name = "\improper AR-B glasses"
-	desc = "The KHI-62-B AR glasses are a design from Kitsuhana Heavy Industries. \
+	desc = "The ARG-62-B AR Glasses are capable of displaying information on individuals. \
 	These have been upgraded with every feature the lesser models have. Now we're talkin'."
 	mode = "best"
 	flash_protection = FLASH_PROTECTION_MAJOR

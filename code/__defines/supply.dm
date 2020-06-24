@@ -17,3 +17,12 @@
 #define SUP_ORDER_APPROVED  "Approved"
 #define SUP_ORDER_DENIED    "Denied"
 #define SUP_ORDER_SHIPPED   "Shipped"
+
+// Supplier legality
+#define SUPPLIER_LEGAL		0
+#define SUPPLIER_SHADY		1
+#define SUPPLIER_ILLEGAL	2
+
+// Types of currency for trading
+#define CURRENCY_POINTS		"points"
+#define CURRENCY_VBUX		"virgobucks"

@@ -9,29 +9,45 @@ SUBSYSTEM_DEF(supply)
 
 	//supply points
 	var/points = 50
-	var/points_per_process = 1.0	// Processes every 20 seconds, so this is 3 per minute
+	var/vbux = 0
+	var/points_per_process = 1		// Processes every 20 seconds, so this is 3 per minute
 	var/points_per_slip = 2
-	var/points_per_money = 0.02 // 1 point for $50
+	var/points_per_money = 0.02 	// 1 point for $50
 	//control
 	var/ordernum
 	var/list/shoppinglist = list()			// Approved orders
 	var/list/supply_pack = list()			// All supply packs
+	var/list/supplier = list()				// All suppliers
 	var/list/exported_crates = list()		// Crates sent from the station
 	var/list/order_history = list()			// History of orders, showing edits made by users
 	var/list/adm_order_history = list() 	// Complete history of all orders, for admin use
 	var/list/adm_export_history = list()	// Complete history of all crates sent back on the shuttle, for admin use
 	//shuttle movement
-	var/movetime = 1200
+	var/movetime = 300
 	var/datum/shuttle/autodock/ferry/supply/shuttle
+	var/destination_tag = "main"
 
 /datum/controller/subsystem/supply/Initialize()
 	ordernum = rand(1,9000)
+
+	// build master supplier list
+	for(var/typepath in subtypesof(/datum/supplier))
+		var/datum/supplier/S = new typepath()
+		if(S.name)
+			supplier[S.supplier_tag] = S
+		else
+			qdel(S)
 
 	// build master supply list
 	for(var/typepath in subtypesof(/datum/supply_pack))
 		var/datum/supply_pack/P = new typepath()
 		if(P.name)
 			supply_pack[P.name] = P
+			if(P.supplier_tag && supplier[P.supplier_tag])
+				supplier[P.supplier_tag].supplypacks += P
+				P.supplier = supplier[P.supplier_tag]
+				if(!(P.group in supplier[P.supplier_tag].supply_groups))
+					supplier[P.supplier_tag].supply_groups += P.group
 		else
 			qdel(P)
 
@@ -395,3 +411,4 @@ SUBSYSTEM_DEF(supply)
 	var/ordered_at							// Date and time the order was requested at
 	var/approved_at							// Date and time the order was approved at
 	var/status								// [Requested, Accepted, Denied, Shipped]
+	var/supplier							// Who are we buying it from?

@@ -37,6 +37,8 @@ var/list/all_supply_groups = list("Atmospherics",
 	var/contraband = 0
 	var/num_contained = 0		//number of items picked to be contained in a /randomised crate
 	var/group = "Miscellaneous"
+	var/datum/supplier/supplier
+	var/supplier_tag = "main"
 
 /datum/supply_pack/New()
 	for(var/path in contains)

@@ -3402,6 +3402,8 @@
 #include "code\modules\spells\targeted\projectile\fireball.dm"
 #include "code\modules\spells\targeted\projectile\magic_missile.dm"
 #include "code\modules\spells\targeted\projectile\projectile.dm"
+#include "code\modules\supply\supplier.dm"
+#include "code\modules\supply\supplypacks\cargo\_cargo.dm"
 #include "code\modules\surgery\_defines.dm"
 #include "code\modules\surgery\bones.dm"
 #include "code\modules\surgery\encased.dm"

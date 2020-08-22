@@ -167,10 +167,11 @@
 		)
 
 	lateload_single_pick = list(
-		list("Snow Outpost"),
+		list("Fractal Labyrinth")
+		/*list("Snow Outpost"),
 		list("Carp Farm"),
 		list("Snow Field"),
-		list("Listening Post")
+		list("Listening Post")*/
 		)
 
 	ai_shell_restricted = TRUE

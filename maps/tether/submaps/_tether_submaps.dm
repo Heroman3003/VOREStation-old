@@ -325,6 +325,13 @@
 	mappath = 'gateway/listeningpost.dmm'
 	associated_map_datum = /datum/map_z_level/tether_lateload/gateway_destination
 
+#include "gateway/fractal_labyrinth.dm"
+/datum/map_template/tether_lateload/gateway/fractal_labyrinth
+	name = "Fractal Labyrinth"
+	desc = "That lost moment of time, personified"
+	mappath = 'gateway/fractal_labyrinth.dmm'
+	associated_map_datum = /datum/map_z_level/tether_lateload/gateway_destination
+
 //////////////////////////////////////////////////////////////////////////////////////
 // Admin-use z-levels for loading whenever an admin feels like
 #if AWAY_MISSION_TEST

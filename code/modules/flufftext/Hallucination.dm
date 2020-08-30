@@ -168,12 +168,12 @@ mob/living/carbon/proc/handle_hallucinations()
 			if(71 to 72)
 				//Fake death
 //				src.sleeping_willingly = 1
-				src.sleeping = 20
+				SetSleeping(20)
 				hal_crit = 1
 				hal_screwyhud = 1
 				spawn(rand(50,100))
 //					src.sleeping_willingly = 0
-					src.sleeping = 0
+					SetSleeping(0)
 					hal_crit = 0
 					hal_screwyhud = 0
 	handling_hal = 0
@@ -189,7 +189,7 @@ mob/living/carbon/proc/handle_hallucinations()
 
 		var/possible_txt = list("Launch Escape Pods","Self-Destruct Sequence","\[Swipe ID\]","De-Monkify",\
 		"Reticulate Splines","Plasma","Open Valve","Lockdown","Nerf Airflow","Kill Traitor","Nihilism",\
-		"OBJECTION!","Arrest Stephen Bowman","Engage Anti-Trenna Defenses","Increase Colony Director IQ","Retrieve Arms",\
+		"OBJECTION!","Arrest Stephen Bowman","Engage Anti-Trenna Defenses","Increase Site Manager IQ","Retrieve Arms",\
 		"Play Charades","Oxygen","Inject BeAcOs","Ninja Lizards","Limit Break","Build Sentry")
 
 		if(mid_txts)

@@ -254,6 +254,21 @@
 
 	feedback_add_details("admin_verb","TAirPumpNoise")
 
+/client/verb/toggle_pickup_sounds()
+	set name = "Toggle Picked Up Item Sounds"
+	set category = "Preferences"
+	set desc = "Toggles sounds when items are picked up or thrown."
+
+	var/pref_path = /datum/client_preference/pickup_sounds
+
+	toggle_preference(pref_path)
+
+	to_chat(src, "You will [ (is_preference_enabled(pref_path)) ? "now" : "no longer"] hear sounds when items are picked up or thrown.")
+
+	SScharacter_setup.queue_preferences_save(prefs)
+
+	feedback_add_details("admin_verb", "TPickupSounds")
+
 /client/verb/toggle_drop_sounds()
 	set name = "Toggle Dropped Item Sounds"
 	set category = "Preferences"
@@ -333,6 +348,19 @@
 	to_chat(src, "You have toggled VChat [is_preference_enabled(pref_path) ? "on" : "off"]. \
 		You will have to reload VChat and/or reconnect to the server for these changes to take place. \
 		VChat message persistence is not guaranteed if you change this again before the start of the next round.")
+
+/client/verb/toggle_status_indicators()
+	set name = "Toggle Status Indicators"
+	set category = "Preferences"
+	set desc = "Enable/Disable seeing status indicators over peoples' heads."
+
+	var/pref_path = /datum/client_preference/status_indicators
+	toggle_preference(pref_path)
+	SScharacter_setup.queue_preferences_save(prefs)
+
+	to_chat(src, "You will now [(is_preference_enabled(/datum/client_preference/status_indicators)) ? "see" : "not see"] status indicators.")
+
+	feedback_add_details("admin_verb","TStatusIndicators")
 
 
 // Not attached to a pref datum because those are strict binary toggles

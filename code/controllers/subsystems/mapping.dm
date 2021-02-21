@@ -9,6 +9,10 @@ SUBSYSTEM_DEF(mapping)
 	var/obj/effect/landmark/engine_loader/engine_loader
 	var/list/shelter_templates = list()
 
+	//VOREStation Additions Begin
+	var/list/randomized_maint_landmarks = list()
+	var/list/
+
 /datum/controller/subsystem/mapping/Recover()
 	flags |= SS_NO_INIT // Make extra sure we don't initialize twice.
 	shelter_templates = SSmapping.shelter_templates
@@ -23,7 +27,7 @@ SUBSYSTEM_DEF(mapping)
 	if(config.generate_map)
 		// Map-gen is still very specific to the map, however putting it here should ensure it loads in the correct order.
 		using_map.perform_map_generation()
-	
+
 	loadEngine()
 	preloadShelterTemplates() // VOREStation EDIT: Re-enable Shelter Capsules
 	// Mining generation probably should be here too
@@ -31,6 +35,8 @@ SUBSYSTEM_DEF(mapping)
 	// Lateload Code related to Expedition areas.
 	if(using_map) // VOREStation Edit: Re-enable this.
 		loadLateMaps()
+		if(using_map.randomized_generation)
+			perform_map_randomization()
 	..()
 
 /datum/controller/subsystem/mapping/proc/load_map_templates()

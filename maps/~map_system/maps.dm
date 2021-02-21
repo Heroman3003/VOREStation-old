@@ -63,7 +63,8 @@ var/list/all_maps = list()
 	var/list/holomap_offset_y = list()
 	var/list/holomap_legend_x = list()
 	var/list/holomap_legend_y = list()
-	var/list/meteor_strike_areas	// VOREStation Edit - Areas meteor strikes may choose to hit.
+	var/randomized_generation = FALSE		//VOREStation Addition - for randomized maints
+	var/list/meteor_strike_areas	// VOREStation Addition - Areas meteor strikes may choose to hit.
 	var/ai_shell_restricted = FALSE			//VOREStation Addition - are there z-levels restricted?
 	var/ai_shell_allowed_levels = list()	//VOREStation Addition - which z-levels ARE we allowed to visit?
 

@@ -4,5 +4,5 @@
 
 /obj/effect/landmark/maint_randomization/passage
 	name = "potential maint passage"
-	var/randomization_id
-	var/door_type = null
+	var/randomization_id = null
+	var/door_type = /obj/machinery/door/airlock/maintenance/common

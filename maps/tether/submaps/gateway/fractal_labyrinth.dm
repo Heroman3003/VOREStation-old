@@ -51,7 +51,7 @@
 	desc = "How's it hanging?"
 	icon_state = "clown"
 	icon_living = "clown"
-	icon_dead = "clown_dead"
+	icon_dead = "clown"
 
 	faction = "fractal_theater"
 
@@ -76,10 +76,10 @@
 
 /mob/living/simple_mob/fractal/reverse_mime
 	name = "emim"
-	desc = "One quiet hangout"
+	desc = "One quiet hangout."
 	icon_state = "mine"
 	icon_living = "mime"
-	icon_dead = "mime_dead"
+	icon_dead = "mime"
 
 	faction = "fractal_theater"
 

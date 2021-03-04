@@ -6,6 +6,7 @@
 	var/image/img = image('icons/mob/animal.dmi', src, animal)
 	img.override = TRUE
 	add_alt_appearance("animals", img, displayTo = alt_farmanimals)
+	new transform_vr()
 
 
 /mob/living/carbon/human/Destroy()

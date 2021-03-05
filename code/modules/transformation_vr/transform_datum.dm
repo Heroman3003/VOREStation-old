@@ -1,42 +1,42 @@
 /datum/transformation_datum
-	var/species
+	var/species = "Human"
 	var/custom_species_name
 
-	var/gender_physical
-	var/gender_identity
+	var/gender_physical = "male"
+	var/gender_identity = "male"
 
 	var/list/markings = list()
 
-	var/body_color
-	var/skin_tone
-	var/eye_color
+	var/body_color = "#FFFFFF"
+	var/skin_tone = 30
+	var/eye_color = "#000000"
 
-	var/hair_style
-	var/hair_color
+	var/hair_style = "Bald"
+	var/hair_color = "#222222"
 
-	var/gradient_style
-	var/gradient_color
+	var/gradient_style = "None"
+	var/gradient_color = "#222222"
 
-	var/facial_hair_style
-	var/facial_hair_color
+	var/facial_hair_style = "Shaved"
+	var/facial_hair_color = "#222222"
 
 	var/ears_style
-	var/ears_color_primary
-	var/ears_color_secondary
-	var/ears_color_tertiary
+	var/ears_color_primary = "#222222"
+	var/ears_color_secondary = "#222222"
+	var/ears_color_tertiary = "#222222"
 
 
 	var/tail_style
-	var/tail_color_primary
-	var/tail_color_secondary
-	var/tail_color_tertiary
+	var/tail_color_primary = "#222222"
+	var/tail_color_secondary = "#222222"
+	var/tail_color_tertiary = "#222222"
 
 	var/wing_style
-	var/wing_color_primary
-	var/wing_color_secondary
-	var/wing_color_tertiary
+	var/wing_color_primary = "#222222"
+	var/wing_color_secondary = "#222222"
+	var/wing_color_tertiary = "#222222"
 
-	var/scale
+	var/scale = 100
 
 /datum/transformation_datum/proc/apply_transformation(var/mob/living/carbon/human/victim)
 
@@ -60,11 +60,9 @@
 			if(O)
 				O.markings[M] = list("color" = mark_color, "datum" = mark_datum)
 
-	victim.r_skin = hex2num(copytext(body_color, 2, 4))
-	victim.g_skin = hex2num(copytext(body_color, 4, 6))
-	victim.b_skin = hex2num(copytext(body_color, 6, 8))
+	victim.change_skin_color(hex2num(copytext(body_color, 2, 4)), hex2num(copytext(body_color, 4, 6)), hex2num(copytext(body_color, 6, 8)))
 
-	victim.s_tone = skin_tone
+	victim.change_skin_tone(skin_tone)
 
 	victim.h_style = hair_style
 	victim.r_hair = hex2num(copytext(hair_color, 2, 4))
@@ -117,4 +115,28 @@
 	victim.resize(scale, animate = FALSE)
 
 
+	victim.update_dna()
 	victim.update_icon()
+
+/datum/transformation_datum/preset
+	species = "Skrell"
+	custom_species_name = "Frogg-o"
+
+	gender_physical = "female"
+	gender_identity = "plural"
+
+	markings = list("Belly and butt" = "#FF00FF")
+
+	body_color = "#00EEFF"
+	skin_tone = 255
+	eye_color = "#FF00FF"
+
+	hair_style = "Astolfo"
+	hair_color = "#FFAAAA"
+
+	facial_hair_style = "Shaved"
+
+	wing_style = /datum/sprite_accessory/wing/featheredlarge
+	wing_color_primary = "#FFFF99"
+
+	scale = 1.5

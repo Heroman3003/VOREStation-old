@@ -61,23 +61,18 @@
 				O.markings[M] = list("color" = mark_color, "datum" = mark_datum)
 
 	victim.change_skin_color(hex2num(copytext(body_color, 2, 4)), hex2num(copytext(body_color, 4, 6)), hex2num(copytext(body_color, 6, 8)))
-
 	victim.change_skin_tone(skin_tone)
 
+	victim.change_eye_color(hex2num(copytext(eye_color, 2, 4)), hex2num(copytext(eye_color, 4, 6)), hex2num(copytext(eye_color, 6, 8)))
+
 	victim.h_style = hair_style
-	victim.r_hair = hex2num(copytext(hair_color, 2, 4))
-	victim.g_hair = hex2num(copytext(hair_color, 4, 6))
-	victim.b_hair = hex2num(copytext(hair_color, 6, 8))
+	victim.change_hair_color(hex2num(copytext(hair_color, 2, 4)), hex2num(copytext(hair_color, 4, 6)), hex2num(copytext(hair_color, 6, 8)))
 
 	victim.grad_style = gradient_style
-	victim.r_grad = hex2num(copytext(gradient_color, 2, 4))
-	victim.g_grad = hex2num(copytext(gradient_color, 4, 6))
-	victim.b_grad = hex2num(copytext(gradient_color, 6, 8))
+	victim.change_grad_color(hex2num(copytext(gradient_color, 2, 4)), hex2num(copytext(gradient_color, 4, 6)), hex2num(copytext(gradient_color, 6, 8)))
 
 	victim.f_style = facial_hair_style
-	victim.r_facial = hex2num(copytext(facial_hair_color, 2, 4))
-	victim.g_facial = hex2num(copytext(facial_hair_color, 4, 6))
-	victim.b_facial = hex2num(copytext(facial_hair_color, 6, 8))
+	victim.change_facial_hair_color(hex2num(copytext(facial_hair_color, 2, 4)), hex2num(copytext(facial_hair_color, 4, 6)), hex2num(copytext(facial_hair_color, 6, 8)))
 
 	victim.ear_style = ear_styles_list[ears_style]
 	victim.r_ears = hex2num(copytext(ears_color_primary, 2, 4))

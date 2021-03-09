@@ -15,15 +15,27 @@
 
 	user.set_machine(src)
 
-	var/datum/species/mob_species = GLOB.all_species[current_template.species]
+	//var/datum/species/mob_species = GLOB.all_species[current_template.species]
 
 
-	var/dat = "<head><title>Body Design</title></head><body>"
+	var/dat = "<head><title>Transformation Template Design</title></head><body>"
 
+	dat += "<br>\[<a href='?src=\ref[src];operation=change_speciesname'>Change Species Name</a>\]"
 
+	user << browse(dat, "window=tfconsole;size=400x500")
+	onclose(user, "tfconsole")
 
+/obj/machinery/computer/transformation_designer/Topic(href, href_list)
+	if(..())
+		return 1
 
+	if(!href_list["operation"])
+		return
+	switch(href_list["operation"])
+		if("change_speciesname")
+			to_chat(usr, "This is where we change the species")
 
+	src.updateUsrDialog()
 
 
 
